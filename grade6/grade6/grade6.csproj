@@ -57,6 +57,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Explore.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Explore.Designer.cs">
+      <DependentUpon>Explore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LoadingScreen.Designer.cs">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +77,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Explore.resx">
+      <DependentUpon>Explore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingScreen.resx">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -169,6 +187,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\parochat_montendre.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comp_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mountain-1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circled_play_48px1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

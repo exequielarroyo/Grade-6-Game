@@ -103,6 +103,26 @@ namespace grade6.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap circled_play_48px1 {
+            get {
+                object obj = ResourceManager.GetObject("circled_play_48px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap comp_1 {
+            get {
+                object obj = ResourceManager.GetObject("comp_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fc_title_dribbble {
             get {
                 object obj = ResourceManager.GetObject("fc_title_dribbble", resourceCulture);
@@ -186,6 +206,16 @@ namespace grade6.Properties {
         internal static System.Drawing.Bitmap lion {
             get {
                 object obj = ResourceManager.GetObject("lion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mountain_1 {
+            get {
+                object obj = ResourceManager.GetObject("mountain-1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

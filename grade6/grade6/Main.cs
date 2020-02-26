@@ -43,9 +43,7 @@ namespace grade6
             //flowLayoutPanel1.ScrollControlIntoView(gunaHScrollBar1);
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-        }
+        
 
         private void gunaShadowPanel2_MouseHover(object sender, EventArgs e)
         {
@@ -128,6 +126,48 @@ namespace grade6
         {
             chat1.Width = 146;
             chat1.Height = 77;
+        }
+
+        private void gunaShadowPanel10_MouseHover(object sender, EventArgs e)
+        {
+            gunaShadowPanel10.ShadowDepth = 0;
+            gunaShadowPanel10.ShadowShift = 2;
+            gunaElipse5.Radius = 15;
+            gunaShadowPanel10.Width = 114;
+            gunaShadowPanel10.Height = 160;
+        }
+
+        private void gunaShadowPanel10_MouseLeave(object sender, EventArgs e)
+        {
+            gunaShadowPanel10.ShadowDepth = 50;
+            gunaShadowPanel10.ShadowShift = 5;
+            gunaElipse5.Radius = 8;
+            gunaShadowPanel10.Width = 110;
+            gunaShadowPanel10.Height = 154;
+        }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            loadingScreen1.BringToFront();
+            loadingScreen1.timer1.Start();
+            explore1.Hide();
+            MainMenu.Show();
+            Feedback.Show();
+            MainMenu.Dock = DockStyle.Fill;
+        }
+        private void exploreButton_Click(object sender, EventArgs e)
+        {
+            explore1.Show();
+            MainMenu.Hide();
+            Feedback.Hide();
+            MainMenu.SetColumnSpan(MAINPANEL, 2);
+        }
+
+        private void homeButton_Click(object sender, EventArgs e)
+        {
+            explore1.Hide();
+            MainMenu.Show();
+            Feedback.Show();
+            MainMenu.SetColumnSpan(MAINPANEL, 1);
         }
     }
 }
