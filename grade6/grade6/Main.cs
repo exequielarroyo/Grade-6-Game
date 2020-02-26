@@ -41,7 +41,6 @@ namespace grade6
         {
             flowLayoutPanel1.AutoScrollPosition = new Point(gunaHScrollBar1.Value, 0);
             //flowLayoutPanel1.ScrollControlIntoView(gunaHScrollBar1);
-
         }
 
         private void Form1_Load(object sender, EventArgs e)

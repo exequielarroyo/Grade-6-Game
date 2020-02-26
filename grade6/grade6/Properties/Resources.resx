@@ -121,6 +121,9 @@
   <data name="lion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lion.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="alabaster-co-azyhmWndnHA-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\alabaster-co-azyhmWndnHA-unsplash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="home_button_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home_button_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -136,14 +139,17 @@
   <data name="play_button_circled_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\play_button_circled_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="food chain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\food chain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="unnamed-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\unnamed-1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="food chain1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\food chain1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hand_cursor_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hand_cursor_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="image_processing20200113-12887-1wde525" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image_processing20200113-12887-1wde525.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="shark" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shark.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,8 +157,8 @@
   <data name="circled_play_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\circled_play_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="food chain" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\food chain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="play_52px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\play_52px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fc_title_dribbble" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fc_title_dribbble.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,13 +166,13 @@
   <data name="food_chain_dribbble_v2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\food_chain_dribbble_v2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="play_52px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\play_52px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hand_cursor_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hand_cursor_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="circled_play_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\circled_play_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="alabaster-co-azyhmWndnHA-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\alabaster-co-azyhmWndnHA-unsplash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="parochat_montendre" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\parochat_montendre.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

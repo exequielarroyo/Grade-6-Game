@@ -173,9 +173,29 @@ namespace grade6.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap image_processing20200113_12887_1wde525 {
+            get {
+                object obj = ResourceManager.GetObject("image_processing20200113-12887-1wde525", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lion {
             get {
                 object obj = ResourceManager.GetObject("lion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap parochat_montendre {
+            get {
+                object obj = ResourceManager.GetObject("parochat_montendre", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -164,5 +164,11 @@
   <ItemGroup>
     <None Include="Resources\alabaster-co-azyhmWndnHA-unsplash.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_processing20200113-12887-1wde525.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parochat_montendre.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
