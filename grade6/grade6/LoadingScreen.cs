@@ -26,5 +26,10 @@ namespace grade6
                 this.Hide();
             }
         }
+
+        private void LoadingScreen_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

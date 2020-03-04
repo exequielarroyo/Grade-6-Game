@@ -43,7 +43,7 @@ namespace grade6
             //flowLayoutPanel1.ScrollControlIntoView(gunaHScrollBar1);
         }
 
-        
+
 
         private void gunaShadowPanel2_MouseHover(object sender, EventArgs e)
         {
@@ -145,29 +145,158 @@ namespace grade6
             gunaShadowPanel10.Width = 110;
             gunaShadowPanel10.Height = 154;
         }
+        
+
+        private void gunaShadowPanel11_MouseHover(object sender, EventArgs e)
+        {
+            gunaShadowPanel11.ShadowDepth = 0;
+            gunaShadowPanel11.ShadowShift = 2;
+            gunaElipse6.Radius = 15;
+            gunaShadowPanel11.Width = 114;
+            gunaShadowPanel11.Height = 160;
+        }
+
+        private void gunaShadowPanel11_MouseLeave(object sender, EventArgs e)
+        {
+            gunaShadowPanel11.ShadowDepth = 50;
+            gunaShadowPanel11.ShadowShift = 5;
+            gunaElipse6.Radius = 8;
+            gunaShadowPanel11.Width = 110;
+            gunaShadowPanel11.Height = 154;
+        }
+
+        private void gunaShadowPanel12_MouseHover(object sender, EventArgs e)
+        {
+            gunaShadowPanel12.ShadowDepth = 0;
+            gunaShadowPanel12.ShadowShift = 2;
+            gunaElipse7.Radius = 15;
+            gunaShadowPanel12.Width = 114;
+            gunaShadowPanel12.Height = 160;
+        }
+
+        private void gunaShadowPanel12_MouseLeave(object sender, EventArgs e)
+        {
+            gunaShadowPanel12.ShadowDepth = 50;
+            gunaShadowPanel12.ShadowShift = 5;
+            gunaElipse7.Radius = 8;
+            gunaShadowPanel12.Width = 110;
+            gunaShadowPanel12.Height = 154;
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             loadingScreen1.BringToFront();
             loadingScreen1.timer1.Start();
-            explore1.Hide();
+            learn1.Hide();
             MainMenu.Show();
             Feedback.Show();
+            games1.Hide();
             MainMenu.Dock = DockStyle.Fill;
-        }
-        private void exploreButton_Click(object sender, EventArgs e)
-        {
-            explore1.Show();
-            MainMenu.Hide();
-            Feedback.Hide();
-            MainMenu.SetColumnSpan(MAINPANEL, 2);
         }
 
         private void homeButton_Click(object sender, EventArgs e)
         {
-            explore1.Hide();
+            learn1.Hide();
             MainMenu.Show();
             Feedback.Show();
+            games1.Hide();
             MainMenu.SetColumnSpan(MAINPANEL, 1);
+        }
+        private void gamesButton_Click(object sender, EventArgs e)
+        {
+            learn1.Hide();
+            MainMenu.Hide();
+            Feedback.Hide();
+            games1.Show();
+            MainMenu.SetColumnSpan(MAINPANEL, 2);
+        }
+        private void learnButton_Click(object sender, EventArgs e)
+        {
+            learn1.Show();
+            MainMenu.Hide();
+            Feedback.Hide();
+            games1.Hide();
+            MainMenu.SetColumnSpan(MAINPANEL, 2);
+        }
+
+        private void playVideoButton_MouseHover(object sender, EventArgs e)
+        {
+            playVideoButton.Image = Properties.Resources.play_button_circled_100px;
+            playVideoButton.Height = 40;
+            playVideoButton.Width = 40;
+        }
+
+        private void playVideoButton_MouseLeave(object sender, EventArgs e)
+        {
+            playVideoButton.Image = Properties.Resources.play_button_circled_96px;
+            playVideoButton.Height = 40;
+            playVideoButton.Width = 40;
+        }
+
+        private void playVideoButton_Click(object sender, EventArgs e)
+        {
+            learnButton_Click(sender, e);
+            learn1.gunaShadowPanel2_Click(sender, e);
+            learnButton.Checked = true;
+        }
+
+        private void gunaShadowPanel1_Click(object sender, EventArgs e)
+        {
+            learnButton_Click(sender, e);
+            learn1.gunaShadowPanel1_Click(sender, e);
+            learnButton.Checked = true;
+        }
+
+        private void gunaShadowPanel2_Click(object sender, EventArgs e)
+        {
+            learnButton_Click(sender, e);
+            learn1.gunaShadowPanel2_Click(sender, e);
+            learnButton.Checked = true;
+        }
+
+        private void gunaShadowPanel3_Click(object sender, EventArgs e)
+        {
+            learnButton_Click(sender, e);
+            learn1.gunaShadowPanel3_Click(sender, e);
+            learnButton.Checked = true;
+        }
+
+        private void gunaShadowPanel4_Click(object sender, EventArgs e)
+        {
+            learnButton_Click(sender, e);
+            learn1.gunaShadowPanel4_Click(sender, e);
+            learnButton.Checked = true;
+        }
+
+        private void gunaShadowPanel12_Click(object sender, EventArgs e)
+        {
+            learnButton_Click(sender, e);
+            learn1.gunaShadowPanel12_Click(sender, e);
+            learnButton.Checked = true;
+        }
+
+        private void gunaShadowPanel11_Click(object sender, EventArgs e)
+        {
+            learnButton_Click(sender, e);
+            learn1.gunaShadowPanel11_Click(sender, e);
+            learnButton.Checked = true;
+        }
+
+        private void gunaShadowPanel10_Click(object sender, EventArgs e)
+        {
+            learnButton_Click(sender, e);
+            learn1.gunaShadowPanel10_Click(sender, e);
+            learnButton.Checked = true;
+        }
+
+        private void exit_MouseHover(object sender, EventArgs e)
+        {
+            exitLabel.Visible = true;
+        }
+
+        private void exit_MouseLeave(object sender, EventArgs e)
+        {
+            exitLabel.Visible = false;
         }
     }
 }

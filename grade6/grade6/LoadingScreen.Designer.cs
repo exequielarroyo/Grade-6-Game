@@ -74,11 +74,11 @@
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Axiforma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel1.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel1.Location = new System.Drawing.Point(403, 417);
+            this.gunaLabel1.Location = new System.Drawing.Point(444, 417);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(206, 17);
+            this.gunaLabel1.Size = new System.Drawing.Size(169, 17);
             this.gunaLabel1.TabIndex = 2;
-            this.gunaLabel1.Text = "D e v e l o p   b y   T h e s i s G a m e r";
+            this.gunaLabel1.Text = "D e v e l o p   b y   T o r a h   C.";
             // 
             // LoadingScreen
             // 
@@ -89,6 +89,7 @@
             this.Controls.Add(this.gunaTransfarantPictureBox1);
             this.Name = "LoadingScreen";
             this.Size = new System.Drawing.Size(791, 541);
+            this.Load += new System.EventHandler(this.LoadingScreen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
