@@ -313,6 +313,16 @@ namespace grade6.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logout_rounded_left_48px {
+            get {
+                object obj = ResourceManager.GetObject("logout_rounded_left_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mountain_1 {
             get {
                 object obj = ResourceManager.GetObject("mountain-1", resourceCulture);
@@ -416,6 +426,25 @@ namespace grade6.Properties {
         internal static System.Drawing.Bitmap snow {
             get {
                 object obj = ResourceManager.GetObject("snow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream unlock {
+            get {
+                return ResourceManager.GetStream("unlock", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap unlock_53px {
+            get {
+                object obj = ResourceManager.GetObject("unlock_53px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

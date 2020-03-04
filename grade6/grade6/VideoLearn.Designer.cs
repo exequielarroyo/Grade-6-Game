@@ -175,10 +175,10 @@
         #endregion
         private Guna.UI.WinForms.GunaCircleButton gunaCircleButton1;
         private Guna.UI.WinForms.GunaCircleButton backButton;
-        private Guna.UI.WinForms.GunaCircleButton fullButton;
         private Guna.UI.WinForms.GunaElipse gunaElipse1;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel1;
         public AxWMPLib.AxWindowsMediaPlayer player;
         public Guna.UI.WinForms.GunaLabel titleLabel;
+        public Guna.UI.WinForms.GunaCircleButton fullButton;
     }
 }

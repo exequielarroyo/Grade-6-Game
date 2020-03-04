@@ -19,6 +19,7 @@ namespace grade6
         
         private void VideoLearn_Load(object sender, EventArgs e)
         {
+            
         }
         public bool isPlay = false;
         private void gunaCircleButton1_Click(object sender, EventArgs e)
@@ -45,7 +46,7 @@ namespace grade6
             player.Ctlcontrols.stop();
         }
 
-        private void fullButton_Click(object sender, EventArgs e)
+        public void fullButton_Click(object sender, EventArgs e)
         {
             if (player.playState == WMPLib.WMPPlayState.wmppsPlaying)
             {

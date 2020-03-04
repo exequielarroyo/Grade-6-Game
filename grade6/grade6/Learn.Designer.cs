@@ -692,8 +692,8 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel9;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox7;
         public Guna.UI.WinForms.GunaShadowPanel foodwebPanel;
-        private VideoLearn videoLearn1;
         private Document document1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        public VideoLearn videoLearn1;
     }
 }

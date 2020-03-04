@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,12 +13,19 @@ namespace grade6
 {
     public partial class Form1 : Form
     {
+        public SoundPlayer unlock = new SoundPlayer(Properties.Resources.unlock);
+        
         public Form1()
         {
             InitializeComponent();
+            //unlock = new SoundPlayer(Properties.Resources.unlock);
         }
 
-
+        public void Alert(string msg, Notification.enmType type)
+        {
+            Notification frm = new Notification();
+            frm.showAlert(msg, type);
+        }
 
         private void gunaShadowPanel1_MouseHover(object sender, EventArgs e)
         {
@@ -324,6 +332,20 @@ namespace grade6
             if (sender as Guna.UI.WinForms.GunaShadowPanel == exit && YesOrNO == DialogResult.Yes) Environment.Exit(0);
         }
 
-        
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            learnButton_Click(sender, e);
+            homeButton.Checked = false;
+            learnButton.Checked = false;
+            gamesButton.Checked = false;
+            infoButton.Checked = false;
+            learn1.videoLearn1.player.URL = Application.StartupPath + "\\Why Meat is the Best Worst Thing in the World 🍔.mp4";
+            learn1.videoLearn1.titleLabel.Text = "Why Meat is the Best Worst Thing in the World 🍔";
+            learn1.videoLearn1.BringToFront();
+            learn1.videoLearn1.player.Ctlcontrols.play();
+
+            this.Alert("you unlock a hidden video", Notification.enmType.Success);
+
+        }
     }
 }
