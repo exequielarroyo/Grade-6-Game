@@ -16,5 +16,15 @@ namespace grade6
         {
             InitializeComponent();
         }
+
+        private void Games_Load(object sender, EventArgs e)
+        {
+            listGames.BringToFront();
+        }
+
+        private void producerConsumer_Click(object sender, EventArgs e)
+        {
+            gProducerCnsumer1.BringToFront();
+        }
     }
 }

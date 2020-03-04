@@ -43,8 +43,6 @@ namespace grade6
             //flowLayoutPanel1.ScrollControlIntoView(gunaHScrollBar1);
         }
 
-
-
         private void gunaShadowPanel2_MouseHover(object sender, EventArgs e)
         {
             gunaShadowPanel2.ShadowDepth = 0;
@@ -97,11 +95,6 @@ namespace grade6
             gunaElipse4.Radius = 8;
             gunaShadowPanel4.Width = 110;
             gunaShadowPanel4.Height = 154;
-        }
-
-        private void infoVideo_PlayStateChange(object sender, AxWMPLib._WMPOCXEvents_PlayStateChangeEvent e)
-        {
-            infoVideo.Ctlcontrols.play();
         }
 
         private void gunaShadowPanel8_MouseHover(object sender, EventArgs e)
@@ -185,12 +178,13 @@ namespace grade6
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            loadingScreen1.BringToFront();
-            loadingScreen1.timer1.Start();
+            //loadingScreen1.BringToFront();
+            //loadingScreen1.timer1.Start();
             learn1.Hide();
             MainMenu.Show();
             Feedback.Show();
             games1.Hide();
+            info.Hide();
             MainMenu.Dock = DockStyle.Fill;
         }
 
@@ -201,6 +195,7 @@ namespace grade6
             Feedback.Show();
             games1.Hide();
             MainMenu.SetColumnSpan(MAINPANEL, 1);
+            info.Hide();
         }
         private void gamesButton_Click(object sender, EventArgs e)
         {
@@ -209,14 +204,26 @@ namespace grade6
             Feedback.Hide();
             games1.Show();
             MainMenu.SetColumnSpan(MAINPANEL, 2);
+            info.Hide();
         }
         private void learnButton_Click(object sender, EventArgs e)
         {
-            learn1.Show();
             MainMenu.Hide();
             Feedback.Hide();
             games1.Hide();
             MainMenu.SetColumnSpan(MAINPANEL, 2);
+            learn1.Show();
+            info.Hide();
+        }
+
+        private void infoButton_Click(object sender, EventArgs e)
+        {
+            MainMenu.Hide();
+            Feedback.Hide();
+            games1.Hide();
+            MainMenu.SetColumnSpan(MAINPANEL, 2);
+            learn1.Show();
+            info.Show();
         }
 
         private void playVideoButton_MouseHover(object sender, EventArgs e)
@@ -237,9 +244,14 @@ namespace grade6
         {
             learnButton_Click(sender, e);
             learn1.gunaShadowPanel2_Click(sender, e);
-            learnButton.Checked = true;
         }
 
+        private void readLabel_Click(object sender, EventArgs e)
+        {
+            learnButton_Click(sender, e);
+            learn1.gunaShadowPanel4_Click(sender, e);
+            learnButton.Checked = true;
+        }
         private void gunaShadowPanel1_Click(object sender, EventArgs e)
         {
             learnButton_Click(sender, e);
@@ -289,6 +301,7 @@ namespace grade6
             learnButton.Checked = true;
         }
 
+
         private void exit_MouseHover(object sender, EventArgs e)
         {
             exitLabel.Visible = true;
@@ -298,5 +311,19 @@ namespace grade6
         {
             exitLabel.Visible = false;
         }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            AskPermissionBeforeQuite(sender, e as FormClosingEventArgs);
+
+        }
+        private void AskPermissionBeforeQuite(object sender, FormClosingEventArgs e)
+        {
+            DialogResult YesOrNO = MessageBox.Show("Are You Sure To Quit ?", "Thesis GA[]\\/[]ER", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (sender as Guna.UI.WinForms.GunaShadowPanel != exit && YesOrNO == DialogResult.No) e.Cancel = true;
+            if (sender as Guna.UI.WinForms.GunaShadowPanel == exit && YesOrNO == DialogResult.Yes) Environment.Exit(0);
+        }
+
+        
     }
 }

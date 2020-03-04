@@ -54,7 +54,7 @@
             this.fullButton.ForeColor = System.Drawing.Color.White;
             this.fullButton.Image = global::grade6.Properties.Resources.full_screen_48px;
             this.fullButton.ImageSize = new System.Drawing.Size(30, 30);
-            this.fullButton.Location = new System.Drawing.Point(440, 376);
+            this.fullButton.Location = new System.Drawing.Point(358, 376);
             this.fullButton.Name = "fullButton";
             this.fullButton.OnHoverBaseColor = System.Drawing.Color.Red;
             this.fullButton.OnHoverBorderColor = System.Drawing.Color.Black;

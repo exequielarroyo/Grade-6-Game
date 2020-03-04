@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace grade6
 {
-    public partial class GProducerCnsumer : UserControl
+    public partial class GProducerConsumer : UserControl
     {
         int inNullSliceIndex, inmoves = 0;
         List<Bitmap> lstOriginalPictureList = new List<Bitmap>();
         System.Diagnostics.Stopwatch timer = new System.Diagnostics.Stopwatch();
 
-        public GProducerCnsumer()
+        public GProducerConsumer()
         {
             InitializeComponent();
-            lstOriginalPictureList.AddRange(new Bitmap[] { Properties.Resources._1, Properties.Resources._2, Properties.Resources._3, Properties.Resources._4, Properties.Resources._6, Properties.Resources._6, Properties.Resources._7, Properties.Resources._8, Properties.Resources._9, Properties.Resources._null });
+            lstOriginalPictureList.AddRange(new Bitmap[] { Properties.Resources._1, Properties.Resources._2, Properties.Resources._3, Properties.Resources._4, Properties.Resources._5, Properties.Resources._6, Properties.Resources._7, Properties.Resources._8, Properties.Resources._9, Properties.Resources._null });
             lblMovesMade.Text += inmoves;
             lblTimeElapsed.Text = "00:00:00";
         }
@@ -64,7 +64,8 @@ namespace grade6
 
         private void btnQuit_Click(object sender, EventArgs e)
         {
-            AskPermissionBeforeQuite(sender, e as FormClosingEventArgs);
+            //AskPermissionBeforeQuite(sender, e as FormClosingEventArgs);
+            this.SendToBack();
         }
 
         private void AskPermissionBeforeQuite(object sender, FormClosingEventArgs e)
@@ -129,35 +130,6 @@ namespace grade6
                 btnPause.Enabled = false;
                 MessageBox.Show("Time Is Up\nTry Again", "Rabbit Puzzle");
                 Shuffle();
-            }
-        }
-
-        private void pbx1_Click(object sender, EventArgs e)
-        {
-            if (lblTimeElapsed.Text == "00:00:00")
-                timer.Start();
-            int inPictureBoxIndex = gbPuzzleBox.Controls.IndexOf(sender as Control);
-            if (inNullSliceIndex != inPictureBoxIndex)
-            {
-                List<int> FourBrothers = new List<int>(new int[] { ((inPictureBoxIndex % 3 == 0) ? -1 : inPictureBoxIndex - 1), inPictureBoxIndex - 3, (inPictureBoxIndex % 3 == 2) ? -1 : inPictureBoxIndex + 1, inPictureBoxIndex + 3 });
-                if (FourBrothers.Contains(inNullSliceIndex))
-                {
-                    ((PictureBox)gbPuzzleBox.Controls[inNullSliceIndex]).Image = ((PictureBox)gbPuzzleBox.Controls[inPictureBoxIndex]).Image;
-                    ((PictureBox)gbPuzzleBox.Controls[inPictureBoxIndex]).Image = lstOriginalPictureList[9];
-                    inNullSliceIndex = inPictureBoxIndex;
-                    lblMovesMade.Text = "Moves Made : " + (++inmoves);
-                    if (CheckWin())
-                    {
-                        timer.Stop();
-                        (gbPuzzleBox.Controls[8] as PictureBox).Image = lstOriginalPictureList[8];
-                        MessageBox.Show("Congratulations...\nYour Rabbit Is Happy\nTime Elapsed : " + timer.Elapsed.ToString().Remove(8) + "\nTotal Moves Made : " + inmoves, "Rabbit Puzzle");
-                        inmoves = 0;
-                        lblMovesMade.Text = "Moves Made : 0";
-                        lblTimeElapsed.Text = "00:00:00";
-                        timer.Reset();
-                        Shuffle();
-                    }
-                }
             }
         }
 

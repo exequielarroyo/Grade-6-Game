@@ -69,11 +69,17 @@
     <Compile Include="Games.Designer.cs">
       <DependentUpon>Games.cs</DependentUpon>
     </Compile>
-    <Compile Include="GProducerCnsumer.cs">
+    <Compile Include="GProducerConsumer.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GProducerCnsumer.Designer.cs">
-      <DependentUpon>GProducerCnsumer.cs</DependentUpon>
+    <Compile Include="GProducerConsumer.Designer.cs">
+      <DependentUpon>GProducerConsumer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Info.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Info.Designer.cs">
+      <DependentUpon>Info.cs</DependentUpon>
     </Compile>
     <Compile Include="Learn.cs">
       <SubType>UserControl</SubType>
@@ -107,8 +113,11 @@
     <EmbeddedResource Include="Games.resx">
       <DependentUpon>Games.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GProducerCnsumer.resx">
-      <DependentUpon>GProducerCnsumer.cs</DependentUpon>
+    <EmbeddedResource Include="GProducerConsumer.resx">
+      <DependentUpon>GProducerConsumer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info.resx">
+      <DependentUpon>Info.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Learn.resx">
       <DependentUpon>Learn.cs</DependentUpon>
@@ -298,6 +307,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\original.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foodchain.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foodweb.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\herbivore.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carnivore.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\omnivore.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\producer&amp;consumer.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decomposer.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comingsoon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\readme.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snow.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exequiel.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
