@@ -107,6 +107,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Question.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Question.Designer.cs">
+      <DependentUpon>Question.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Questions.cs" />
     <Compile Include="VideoLearn.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -147,6 +154,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Question.resx">
+      <DependentUpon>Question.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VideoLearn.resx">
       <DependentUpon>VideoLearn.cs</DependentUpon>
     </EmbeddedResource>
@@ -370,6 +380,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logout_rounded_left_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop_52px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_user_male_52px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brave-explorers-overworld-menu-dribbble.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

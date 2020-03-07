@@ -34,18 +34,19 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.backButton = new Guna.UI.WinForms.GunaCircleButton();
             this.titleLabel = new Guna.UI.WinForms.GunaLabel();
-            this.gunaShadowPanel4 = new Guna.UI.WinForms.GunaShadowPanel();
+            this.aboutShadowPanel = new Guna.UI.WinForms.GunaShadowPanel();
             this.gameTitleLabel = new Guna.UI.WinForms.GunaLabel();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaSeparator1 = new Guna.UI.WinForms.GunaSeparator();
+            this.gunaVScrollBar1 = new Guna.UI.WinForms.GunaVScrollBar();
+            this.elements = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel1.SuspendLayout();
-            this.gunaShadowPanel4.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
+            this.aboutShadowPanel.SuspendLayout();
+            this.elements.SuspendLayout();
             this.SuspendLayout();
             // 
             // titleLabe
             // 
-            this.titleLabe.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.titleLabe.AutoSize = true;
             this.titleLabe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.titleLabe.Font = new System.Drawing.Font("Google Sans", 15F, System.Drawing.FontStyle.Bold);
@@ -58,28 +59,25 @@
             // 
             // aboutLabel
             // 
-            this.aboutLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.aboutLabel.AutoSize = true;
             this.aboutLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.aboutLabel.Font = new System.Drawing.Font("Google Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aboutLabel.Font = new System.Drawing.Font("Google Sans", 12F);
             this.aboutLabel.ForeColor = System.Drawing.Color.White;
             this.aboutLabel.Location = new System.Drawing.Point(10, 10);
             this.aboutLabel.Margin = new System.Windows.Forms.Padding(10);
             this.aboutLabel.Name = "aboutLabel";
-            this.aboutLabel.Size = new System.Drawing.Size(83, 18);
+            this.aboutLabel.Size = new System.Drawing.Size(92, 20);
             this.aboutLabel.TabIndex = 14;
             this.aboutLabel.Text = "About label";
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.AutoSize = true;
             this.flowLayoutPanel1.Controls.Add(this.aboutLabel);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(529, 278);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(556, 300);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // backButton
@@ -119,23 +117,21 @@
             this.titleLabel.Text = "Title";
             this.titleLabel.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
             // 
-            // gunaShadowPanel4
+            // aboutShadowPanel
             // 
-            this.gunaShadowPanel4.BackColor = System.Drawing.Color.Transparent;
-            this.gunaShadowPanel4.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(76)))), ((int)(((byte)(110)))));
-            this.gunaShadowPanel4.Controls.Add(this.flowLayoutPanel1);
-            this.gunaShadowPanel4.Location = new System.Drawing.Point(3, 28);
-            this.gunaShadowPanel4.Name = "gunaShadowPanel4";
-            this.gunaShadowPanel4.Radius = 5;
-            this.gunaShadowPanel4.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(76)))), ((int)(((byte)(110)))));
-            this.gunaShadowPanel4.ShadowStyle = Guna.UI.WinForms.ShadowMode.Dropped;
-            this.gunaShadowPanel4.Size = new System.Drawing.Size(529, 278);
-            this.gunaShadowPanel4.TabIndex = 13;
+            this.aboutShadowPanel.BackColor = System.Drawing.Color.Transparent;
+            this.aboutShadowPanel.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(76)))), ((int)(((byte)(110)))));
+            this.aboutShadowPanel.Controls.Add(this.flowLayoutPanel1);
+            this.aboutShadowPanel.Location = new System.Drawing.Point(3, 111);
+            this.aboutShadowPanel.Name = "aboutShadowPanel";
+            this.aboutShadowPanel.Radius = 5;
+            this.aboutShadowPanel.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(76)))), ((int)(((byte)(110)))));
+            this.aboutShadowPanel.ShadowStyle = Guna.UI.WinForms.ShadowMode.Dropped;
+            this.aboutShadowPanel.Size = new System.Drawing.Size(556, 300);
+            this.aboutShadowPanel.TabIndex = 13;
             // 
             // gameTitleLabel
             // 
-            this.gameTitleLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.gameTitleLabel.AutoSize = true;
             this.gameTitleLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.gameTitleLabel.Font = new System.Drawing.Font("Google Sans", 7F);
@@ -147,32 +143,69 @@
             this.gameTitleLabel.Text = "game title";
             this.gameTitleLabel.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
             // 
-            // flowLayoutPanel2
+            // gunaLabel1
             // 
-            this.flowLayoutPanel2.AutoScroll = true;
-            this.flowLayoutPanel2.Controls.Add(this.titleLabe);
-            this.flowLayoutPanel2.Controls.Add(this.gameTitleLabel);
-            this.flowLayoutPanel2.Controls.Add(this.gunaShadowPanel4);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(15, 59);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(553, 482);
-            this.flowLayoutPanel2.TabIndex = 14;
+            this.gunaLabel1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.gunaLabel1.Font = new System.Drawing.Font("Google Sans", 10F);
+            this.gunaLabel1.ForeColor = System.Drawing.Color.Gray;
+            this.gunaLabel1.Location = new System.Drawing.Point(3, 25);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(556, 54);
+            this.gunaLabel1.TabIndex = 15;
+            this.gunaLabel1.Text = resources.GetString("gunaLabel1.Text");
+            this.gunaLabel1.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
+            // 
+            // gunaSeparator1
+            // 
+            this.gunaSeparator1.LineColor = System.Drawing.Color.Silver;
+            this.gunaSeparator1.Location = new System.Drawing.Point(3, 82);
+            this.gunaSeparator1.Name = "gunaSeparator1";
+            this.gunaSeparator1.Size = new System.Drawing.Size(556, 23);
+            this.gunaSeparator1.TabIndex = 14;
+            // 
+            // gunaVScrollBar1
+            // 
+            this.gunaVScrollBar1.LargeChange = 100;
+            this.gunaVScrollBar1.Location = new System.Drawing.Point(567, 53);
+            this.gunaVScrollBar1.Maximum = 700;
+            this.gunaVScrollBar1.Name = "gunaVScrollBar1";
+            this.gunaVScrollBar1.ScrollIdleColor = System.Drawing.Color.Silver;
+            this.gunaVScrollBar1.Size = new System.Drawing.Size(20, 480);
+            this.gunaVScrollBar1.TabIndex = 15;
+            this.gunaVScrollBar1.ThumbColor = System.Drawing.Color.DimGray;
+            this.gunaVScrollBar1.ThumbHoverColor = System.Drawing.Color.Gray;
+            this.gunaVScrollBar1.ThumbPressedColor = System.Drawing.Color.DarkGray;
+            this.gunaVScrollBar1.ThumbSize = 300;
+            this.gunaVScrollBar1.ValueChanged += new Guna.UI.WinForms.GunaVScrollBar.ScrollValueChangedDelegate(this.gunaVScrollBar1_ValueChanged);
+            // 
+            // elements
+            // 
+            this.elements.AutoScroll = true;
+            this.elements.Controls.Add(this.titleLabe);
+            this.elements.Controls.Add(this.gameTitleLabel);
+            this.elements.Controls.Add(this.gunaLabel1);
+            this.elements.Controls.Add(this.gunaSeparator1);
+            this.elements.Controls.Add(this.aboutShadowPanel);
+            this.elements.Location = new System.Drawing.Point(3, 59);
+            this.elements.Name = "elements";
+            this.elements.Size = new System.Drawing.Size(582, 479);
+            this.elements.TabIndex = 16;
             // 
             // Document
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.flowLayoutPanel2);
+            this.Controls.Add(this.gunaVScrollBar1);
+            this.Controls.Add(this.elements);
             this.Controls.Add(this.titleLabel);
             this.Controls.Add(this.backButton);
             this.Name = "Document";
             this.Size = new System.Drawing.Size(588, 541);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
-            this.gunaShadowPanel4.ResumeLayout(false);
-            this.gunaShadowPanel4.PerformLayout();
-            this.flowLayoutPanel2.ResumeLayout(false);
-            this.flowLayoutPanel2.PerformLayout();
+            this.aboutShadowPanel.ResumeLayout(false);
+            this.elements.ResumeLayout(false);
+            this.elements.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -183,9 +216,12 @@
         public Guna.UI.WinForms.GunaLabel titleLabel;
         public Guna.UI.WinForms.GunaLabel gameTitleLabel;
         public System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        public Guna.UI.WinForms.GunaShadowPanel gunaShadowPanel4;
-        public System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        public Guna.UI.WinForms.GunaShadowPanel aboutShadowPanel;
         public Guna.UI.WinForms.GunaLabel titleLabe;
         public Guna.UI.WinForms.GunaLabel aboutLabel;
+        private Guna.UI.WinForms.GunaSeparator gunaSeparator1;
+        public Guna.UI.WinForms.GunaLabel gunaLabel1;
+        private Guna.UI.WinForms.GunaVScrollBar gunaVScrollBar1;
+        private System.Windows.Forms.FlowLayoutPanel elements;
     }
 }

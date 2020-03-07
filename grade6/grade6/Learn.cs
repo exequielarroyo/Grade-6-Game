@@ -20,6 +20,7 @@ namespace grade6
         private void Learn_Load(object sender, EventArgs e)
         {
             flowLayoutPanel1.BringToFront();
+
         }
 
         public void gunaShadowPanel1_Click(object sender, EventArgs e)
@@ -28,6 +29,8 @@ namespace grade6
             document1.SendToBack();
             videoLearn1.player.URL = Application.StartupPath + "\\Fabulous Food Chains- Crash Course Kids #7.1.mp4";
             videoLearn1.titleLabel.Text = "Food Chain";
+            videoLearn1.label.Text = "Fabulous Food Chains- Crash Course Kids";
+            
         }
 
         public void gunaShadowPanel2_Click(object sender, EventArgs e)
@@ -36,6 +39,7 @@ namespace grade6
             document1.SendToBack();
             videoLearn1.player.URL = Application.StartupPath + "\\Food Webs- Crash Course Kids #21.2.mp4";
             videoLearn1.titleLabel.Text = "Food Web";
+            videoLearn1.label.Text = "Food Webs- Crash Course Kids";
         }
 
         public void gunaShadowPanel3_Click(object sender, EventArgs e)
@@ -66,7 +70,7 @@ namespace grade6
             videoLearn1.SendToBack();
             document1.BringToFront();
             document1.aboutLabel.Text = "An omnivore is an animal that has the ability to eat and survive on both plant and animal matter. Obtaining energy and nutrients from plant and animal matter, omnivores digest carbohydrates, protein, fat, and fiber, and metabolize the nutrients and energy of the sources absorbed. Often, they have the ability to incorporate food sources such as algae, fungi, and bacteria into their diet.";
-            document1.gameTitleLabel.Text = "Identify me!"; 
+            document1.gameTitleLabel.Text = "Identify me!";
             document1.titleLabel.Text = "Omnivore Animals";
             document1.titleLabe.Text = document1.titleLabel.Text;
         }
@@ -86,8 +90,117 @@ namespace grade6
             document1.SendToBack();
             videoLearn1.player.URL = Application.StartupPath + "\\The Dirt on Decomposers- Crash Course Kids #7.2.mp4";
             videoLearn1.titleLabel.Text = "Decomposer";
+            videoLearn1.label.Text = "The Dirt on Decomposers- Crash Course Kids";
         }
 
-       
-    }
+        Guna.UI.WinForms.GunaShadowPanel panels;
+        void Back(Guna.UI.WinForms.GunaShadowPanel panelss)
+        {
+            panelss.Height = 196;
+            panelss.Width = 120;
+        }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                if (panels.Height <= 206)
+                {
+                    panels.Height += 1;
+                    panels.Width += 1;
+                    if (panels.Height == 206 || panels.Width == 130)
+                    {
+                        timer1.Stop();
+                    }
+                }
+            }
+        }
+
+        private void comingSPanel_MouseHover(object sender, EventArgs e)
+        {
+            panels = comingSPanel;
+            timer1.Start();
+        }
+
+        private void comingSPanel_MouseLeave(object sender, EventArgs e)
+        {
+            Back(comingSPanel);
+        }
+
+        private void gunaShadowPanel10_MouseHover(object sender, EventArgs e)
+        {
+            panels = gunaShadowPanel10;
+            timer1.Start();
+        }
+
+        private void gunaShadowPanel10_MouseLeave(object sender, EventArgs e)
+        {
+            Back(gunaShadowPanel10);
+        }
+
+        private void foodwebPanel_MouseHover(object sender, EventArgs e)
+        {
+            panels = foodwebPanel;
+            timer1.Start();
+        }
+
+        private void foodwebPanel_MouseLeave(object sender, EventArgs e)
+        {
+            Back(foodwebPanel);
+        }
+
+        private void gunaShadowPanel3_MouseHover(object sender, EventArgs e)
+        {
+            panels = gunaShadowPanel3;
+            timer1.Start();
+        }
+
+        private void gunaShadowPanel3_MouseLeave(object sender, EventArgs e)
+        {
+            Back(gunaShadowPanel3);
+        }
+
+        private void gunaShadowPanel1_MouseHover(object sender, EventArgs e)
+        {
+            panels = gunaShadowPanel1;
+            timer1.Start();
+        }
+
+        private void gunaShadowPanel1_MouseLeave(object sender, EventArgs e)
+        {
+            Back(gunaShadowPanel1);
+        }
+
+        private void gunaShadowPanel4_MouseHover(object sender, EventArgs e)
+        {
+            panels = gunaShadowPanel4;
+            timer1.Start();
+        }
+
+        private void gunaShadowPanel4_MouseLeave(object sender, EventArgs e)
+        {
+            Back(gunaShadowPanel4);
+        }
+
+        private void gunaShadowPanel11_MouseHover(object sender, EventArgs e)
+        {
+            panels = gunaShadowPanel11;
+            timer1.Start();
+        }
+
+        private void gunaShadowPanel11_MouseLeave(object sender, EventArgs e)
+        {
+            Back(gunaShadowPanel11);
+        }
+
+        private void gunaShadowPanel12_MouseHover(object sender, EventArgs e)
+        {
+            panels = gunaShadowPanel12;
+            timer1.Start();
+        }
+
+        private void gunaShadowPanel12_MouseLeave(object sender, EventArgs e)
+        {
+            Back(gunaShadowPanel12);
+        }
+        }
 }

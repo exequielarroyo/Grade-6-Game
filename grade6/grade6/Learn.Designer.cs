@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             Guna.UI.WinForms.GunaLabel gunaLabel1;
             Guna.UI.WinForms.GunaLabel gunaLabel4;
             Guna.UI.WinForms.GunaLabel gunaLabel6;
@@ -57,10 +58,11 @@
             this.gunaShadowPanel10 = new Guna.UI.WinForms.GunaShadowPanel();
             this.gunaLabel26 = new Guna.UI.WinForms.GunaLabel();
             this.gunaPictureBox6 = new Guna.UI.WinForms.GunaPictureBox();
-            this.gunaShadowPanel5 = new Guna.UI.WinForms.GunaShadowPanel();
+            this.comingSPanel = new Guna.UI.WinForms.GunaShadowPanel();
             this.gunaLabel9 = new Guna.UI.WinForms.GunaLabel();
             this.gunaPictureBox7 = new Guna.UI.WinForms.GunaPictureBox();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.flowLayoutPanel1 = new System.Windows.Forms.Panel();
             this.videoLearn1 = new grade6.VideoLearn();
             this.document1 = new grade6.Document();
             gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
@@ -85,7 +87,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox8)).BeginInit();
             this.gunaShadowPanel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox6)).BeginInit();
-            this.gunaShadowPanel5.SuspendLayout();
+            this.comingSPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox7)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -105,6 +107,8 @@
             gunaLabel1.Text = "FOOD\r\nCHAIN";
             gunaLabel1.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
             gunaLabel1.Click += new System.EventHandler(this.gunaShadowPanel1_Click);
+            gunaLabel1.MouseLeave += new System.EventHandler(this.gunaShadowPanel1_MouseLeave);
+            gunaLabel1.MouseHover += new System.EventHandler(this.gunaShadowPanel1_MouseHover);
             // 
             // gunaLabel4
             // 
@@ -121,6 +125,8 @@
             gunaLabel4.Text = "FOOD\r\nWEB";
             gunaLabel4.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
             gunaLabel4.Click += new System.EventHandler(this.gunaShadowPanel2_Click);
+            gunaLabel4.MouseLeave += new System.EventHandler(this.foodwebPanel_MouseLeave);
+            gunaLabel4.MouseHover += new System.EventHandler(this.foodwebPanel_MouseHover);
             // 
             // gunaLabel6
             // 
@@ -137,6 +143,8 @@
             gunaLabel6.Text = "HERBIVORE\r\nANIMALS";
             gunaLabel6.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
             gunaLabel6.Click += new System.EventHandler(this.gunaShadowPanel3_Click);
+            gunaLabel6.MouseLeave += new System.EventHandler(this.gunaShadowPanel3_MouseLeave);
+            gunaLabel6.MouseHover += new System.EventHandler(this.gunaShadowPanel3_MouseHover);
             // 
             // gunaLabel8
             // 
@@ -153,6 +161,8 @@
             gunaLabel8.Text = "CARNIVORE\r\nANIMALS";
             gunaLabel8.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
             gunaLabel8.Click += new System.EventHandler(this.gunaShadowPanel4_Click);
+            gunaLabel8.MouseLeave += new System.EventHandler(this.gunaShadowPanel4_MouseLeave);
+            gunaLabel8.MouseHover += new System.EventHandler(this.gunaShadowPanel4_MouseHover);
             // 
             // gunaLabel35
             // 
@@ -169,6 +179,8 @@
             gunaLabel35.Text = "OMNIVORE\r\nANIMALS";
             gunaLabel35.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
             gunaLabel35.Click += new System.EventHandler(this.gunaShadowPanel12_Click);
+            gunaLabel35.MouseLeave += new System.EventHandler(this.gunaShadowPanel12_MouseLeave);
+            gunaLabel35.MouseHover += new System.EventHandler(this.gunaShadowPanel12_MouseHover);
             // 
             // gunaLabel33
             // 
@@ -185,6 +197,8 @@
             gunaLabel33.Text = "PRODUCER /\r\nCONSUMER";
             gunaLabel33.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
             gunaLabel33.Click += new System.EventHandler(this.gunaShadowPanel11_Click);
+            gunaLabel33.MouseLeave += new System.EventHandler(this.gunaShadowPanel11_MouseLeave);
+            gunaLabel33.MouseHover += new System.EventHandler(this.gunaShadowPanel11_MouseHover);
             // 
             // gunaLabel27
             // 
@@ -201,6 +215,8 @@
             gunaLabel27.Text = "DECOMPOSER";
             gunaLabel27.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
             gunaLabel27.Click += new System.EventHandler(this.gunaShadowPanel10_Click);
+            gunaLabel27.MouseLeave += new System.EventHandler(this.gunaShadowPanel10_MouseLeave);
+            gunaLabel27.MouseHover += new System.EventHandler(this.gunaShadowPanel10_MouseHover);
             // 
             // gunaLabel10
             // 
@@ -217,6 +233,8 @@
             gunaLabel10.TabIndex = 0;
             gunaLabel10.Text = "COMING\r\nSOON!";
             gunaLabel10.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
+            gunaLabel10.MouseLeave += new System.EventHandler(this.comingSPanel_MouseLeave);
+            gunaLabel10.MouseHover += new System.EventHandler(this.comingSPanel_MouseHover);
             // 
             // gunaShadowPanel1
             // 
@@ -225,7 +243,7 @@
             this.gunaShadowPanel1.Controls.Add(this.gunaLabel2);
             this.gunaShadowPanel1.Controls.Add(gunaLabel1);
             this.gunaShadowPanel1.Controls.Add(this.gunaPictureBox1);
-            this.gunaShadowPanel1.Location = new System.Drawing.Point(30, 40);
+            this.gunaShadowPanel1.Location = new System.Drawing.Point(34, 29);
             this.gunaShadowPanel1.Margin = new System.Windows.Forms.Padding(30, 40, 3, 3);
             this.gunaShadowPanel1.Name = "gunaShadowPanel1";
             this.gunaShadowPanel1.Radius = 5;
@@ -234,22 +252,25 @@
             this.gunaShadowPanel1.Size = new System.Drawing.Size(120, 196);
             this.gunaShadowPanel1.TabIndex = 3;
             this.gunaShadowPanel1.Click += new System.EventHandler(this.gunaShadowPanel1_Click);
+            this.gunaShadowPanel1.MouseLeave += new System.EventHandler(this.gunaShadowPanel1_MouseLeave);
+            this.gunaShadowPanel1.MouseHover += new System.EventHandler(this.gunaShadowPanel1_MouseHover);
             // 
             // gunaLabel2
             // 
-            this.gunaLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaLabel2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.gunaLabel2.Font = new System.Drawing.Font("Google Sans", 7F);
             this.gunaLabel2.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel2.Location = new System.Drawing.Point(8, 152);
+            this.gunaLabel2.Location = new System.Drawing.Point(4, 152);
             this.gunaLabel2.Name = "gunaLabel2";
             this.gunaLabel2.Size = new System.Drawing.Size(113, 13);
             this.gunaLabel2.TabIndex = 1;
             this.gunaLabel2.Text = "Arrange the food chain";
             this.gunaLabel2.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
             this.gunaLabel2.Click += new System.EventHandler(this.gunaShadowPanel1_Click);
+            this.gunaLabel2.MouseLeave += new System.EventHandler(this.gunaShadowPanel1_MouseLeave);
+            this.gunaLabel2.MouseHover += new System.EventHandler(this.gunaShadowPanel1_MouseHover);
             // 
             // gunaPictureBox1
             // 
@@ -264,6 +285,8 @@
             this.gunaPictureBox1.TabIndex = 5;
             this.gunaPictureBox1.TabStop = false;
             this.gunaPictureBox1.Click += new System.EventHandler(this.gunaShadowPanel1_Click);
+            this.gunaPictureBox1.MouseLeave += new System.EventHandler(this.gunaShadowPanel1_MouseLeave);
+            this.gunaPictureBox1.MouseHover += new System.EventHandler(this.gunaShadowPanel1_MouseHover);
             // 
             // foodwebPanel
             // 
@@ -272,7 +295,7 @@
             this.foodwebPanel.Controls.Add(this.gunaLabel3);
             this.foodwebPanel.Controls.Add(gunaLabel4);
             this.foodwebPanel.Controls.Add(this.gunaPictureBox2);
-            this.foodwebPanel.Location = new System.Drawing.Point(163, 40);
+            this.foodwebPanel.Location = new System.Drawing.Point(167, 29);
             this.foodwebPanel.Margin = new System.Windows.Forms.Padding(10, 40, 3, 3);
             this.foodwebPanel.Name = "foodwebPanel";
             this.foodwebPanel.Radius = 5;
@@ -281,11 +304,12 @@
             this.foodwebPanel.Size = new System.Drawing.Size(120, 196);
             this.foodwebPanel.TabIndex = 4;
             this.foodwebPanel.Click += new System.EventHandler(this.gunaShadowPanel2_Click);
+            this.foodwebPanel.MouseLeave += new System.EventHandler(this.foodwebPanel_MouseLeave);
+            this.foodwebPanel.MouseHover += new System.EventHandler(this.foodwebPanel_MouseHover);
             // 
             // gunaLabel3
             // 
-            this.gunaLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaLabel3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.gunaLabel3.Font = new System.Drawing.Font("Google Sans", 7F);
@@ -297,6 +321,8 @@
             this.gunaLabel3.Text = "Identify the organism";
             this.gunaLabel3.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
             this.gunaLabel3.Click += new System.EventHandler(this.gunaShadowPanel2_Click);
+            this.gunaLabel3.MouseLeave += new System.EventHandler(this.foodwebPanel_MouseLeave);
+            this.gunaLabel3.MouseHover += new System.EventHandler(this.foodwebPanel_MouseHover);
             // 
             // gunaPictureBox2
             // 
@@ -313,6 +339,8 @@
             this.gunaPictureBox2.TabIndex = 5;
             this.gunaPictureBox2.TabStop = false;
             this.gunaPictureBox2.Click += new System.EventHandler(this.gunaShadowPanel2_Click);
+            this.gunaPictureBox2.MouseLeave += new System.EventHandler(this.foodwebPanel_MouseLeave);
+            this.gunaPictureBox2.MouseHover += new System.EventHandler(this.foodwebPanel_MouseHover);
             // 
             // gunaShadowPanel3
             // 
@@ -321,7 +349,7 @@
             this.gunaShadowPanel3.Controls.Add(this.gunaPictureBox4);
             this.gunaShadowPanel3.Controls.Add(this.gunaLabel5);
             this.gunaShadowPanel3.Controls.Add(gunaLabel6);
-            this.gunaShadowPanel3.Location = new System.Drawing.Point(296, 40);
+            this.gunaShadowPanel3.Location = new System.Drawing.Point(300, 29);
             this.gunaShadowPanel3.Margin = new System.Windows.Forms.Padding(10, 40, 3, 3);
             this.gunaShadowPanel3.Name = "gunaShadowPanel3";
             this.gunaShadowPanel3.Radius = 5;
@@ -330,6 +358,8 @@
             this.gunaShadowPanel3.Size = new System.Drawing.Size(120, 196);
             this.gunaShadowPanel3.TabIndex = 5;
             this.gunaShadowPanel3.Click += new System.EventHandler(this.gunaShadowPanel3_Click);
+            this.gunaShadowPanel3.MouseLeave += new System.EventHandler(this.gunaShadowPanel3_MouseLeave);
+            this.gunaShadowPanel3.MouseHover += new System.EventHandler(this.gunaShadowPanel3_MouseHover);
             // 
             // gunaPictureBox4
             // 
@@ -345,11 +375,12 @@
             this.gunaPictureBox4.TabIndex = 5;
             this.gunaPictureBox4.TabStop = false;
             this.gunaPictureBox4.Click += new System.EventHandler(this.gunaShadowPanel3_Click);
+            this.gunaPictureBox4.MouseLeave += new System.EventHandler(this.gunaShadowPanel3_MouseLeave);
+            this.gunaPictureBox4.MouseHover += new System.EventHandler(this.gunaShadowPanel3_MouseHover);
             // 
             // gunaLabel5
             // 
-            this.gunaLabel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaLabel5.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.gunaLabel5.AutoSize = true;
             this.gunaLabel5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.gunaLabel5.Font = new System.Drawing.Font("Google Sans", 7F);
@@ -361,6 +392,8 @@
             this.gunaLabel5.Text = "Swipe to go away!";
             this.gunaLabel5.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
             this.gunaLabel5.Click += new System.EventHandler(this.gunaShadowPanel3_Click);
+            this.gunaLabel5.MouseLeave += new System.EventHandler(this.gunaShadowPanel3_MouseLeave);
+            this.gunaLabel5.MouseHover += new System.EventHandler(this.gunaShadowPanel3_MouseHover);
             // 
             // gunaShadowPanel4
             // 
@@ -369,7 +402,7 @@
             this.gunaShadowPanel4.Controls.Add(this.gunaLabel7);
             this.gunaShadowPanel4.Controls.Add(gunaLabel8);
             this.gunaShadowPanel4.Controls.Add(this.gunaPictureBox3);
-            this.gunaShadowPanel4.Location = new System.Drawing.Point(429, 40);
+            this.gunaShadowPanel4.Location = new System.Drawing.Point(433, 29);
             this.gunaShadowPanel4.Margin = new System.Windows.Forms.Padding(10, 40, 3, 3);
             this.gunaShadowPanel4.Name = "gunaShadowPanel4";
             this.gunaShadowPanel4.Radius = 5;
@@ -378,11 +411,12 @@
             this.gunaShadowPanel4.Size = new System.Drawing.Size(120, 196);
             this.gunaShadowPanel4.TabIndex = 6;
             this.gunaShadowPanel4.Click += new System.EventHandler(this.gunaShadowPanel4_Click);
+            this.gunaShadowPanel4.MouseLeave += new System.EventHandler(this.gunaShadowPanel4_MouseLeave);
+            this.gunaShadowPanel4.MouseHover += new System.EventHandler(this.gunaShadowPanel4_MouseHover);
             // 
             // gunaLabel7
             // 
-            this.gunaLabel7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaLabel7.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.gunaLabel7.AutoSize = true;
             this.gunaLabel7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.gunaLabel7.Font = new System.Drawing.Font("Google Sans", 7F);
@@ -394,6 +428,8 @@
             this.gunaLabel7.Text = "Catch the egg";
             this.gunaLabel7.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
             this.gunaLabel7.Click += new System.EventHandler(this.gunaShadowPanel4_Click);
+            this.gunaLabel7.MouseLeave += new System.EventHandler(this.gunaShadowPanel4_MouseLeave);
+            this.gunaLabel7.MouseHover += new System.EventHandler(this.gunaShadowPanel4_MouseHover);
             // 
             // gunaPictureBox3
             // 
@@ -409,6 +445,8 @@
             this.gunaPictureBox3.TabIndex = 5;
             this.gunaPictureBox3.TabStop = false;
             this.gunaPictureBox3.Click += new System.EventHandler(this.gunaShadowPanel4_Click);
+            this.gunaPictureBox3.MouseLeave += new System.EventHandler(this.gunaShadowPanel4_MouseLeave);
+            this.gunaPictureBox3.MouseHover += new System.EventHandler(this.gunaShadowPanel4_MouseHover);
             // 
             // gunaShadowPanel12
             // 
@@ -417,7 +455,7 @@
             this.gunaShadowPanel12.Controls.Add(this.gunaPictureBox5);
             this.gunaShadowPanel12.Controls.Add(this.gunaLabel34);
             this.gunaShadowPanel12.Controls.Add(gunaLabel35);
-            this.gunaShadowPanel12.Location = new System.Drawing.Point(30, 244);
+            this.gunaShadowPanel12.Location = new System.Drawing.Point(34, 246);
             this.gunaShadowPanel12.Margin = new System.Windows.Forms.Padding(30, 5, 3, 3);
             this.gunaShadowPanel12.Name = "gunaShadowPanel12";
             this.gunaShadowPanel12.Radius = 5;
@@ -426,6 +464,8 @@
             this.gunaShadowPanel12.Size = new System.Drawing.Size(120, 196);
             this.gunaShadowPanel12.TabIndex = 9;
             this.gunaShadowPanel12.Click += new System.EventHandler(this.gunaShadowPanel12_Click);
+            this.gunaShadowPanel12.MouseLeave += new System.EventHandler(this.gunaShadowPanel12_MouseLeave);
+            this.gunaShadowPanel12.MouseHover += new System.EventHandler(this.gunaShadowPanel12_MouseHover);
             // 
             // gunaPictureBox5
             // 
@@ -440,11 +480,12 @@
             this.gunaPictureBox5.TabIndex = 7;
             this.gunaPictureBox5.TabStop = false;
             this.gunaPictureBox5.Click += new System.EventHandler(this.gunaShadowPanel12_Click);
+            this.gunaPictureBox5.MouseLeave += new System.EventHandler(this.gunaShadowPanel12_MouseLeave);
+            this.gunaPictureBox5.MouseHover += new System.EventHandler(this.gunaShadowPanel12_MouseHover);
             // 
             // gunaLabel34
             // 
-            this.gunaLabel34.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaLabel34.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.gunaLabel34.AutoSize = true;
             this.gunaLabel34.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.gunaLabel34.Font = new System.Drawing.Font("Google Sans", 7F);
@@ -456,6 +497,8 @@
             this.gunaLabel34.Text = "Identify me!";
             this.gunaLabel34.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
             this.gunaLabel34.Click += new System.EventHandler(this.gunaShadowPanel12_Click);
+            this.gunaLabel34.MouseLeave += new System.EventHandler(this.gunaShadowPanel12_MouseLeave);
+            this.gunaLabel34.MouseHover += new System.EventHandler(this.gunaShadowPanel12_MouseHover);
             // 
             // gunaShadowPanel11
             // 
@@ -464,7 +507,7 @@
             this.gunaShadowPanel11.Controls.Add(this.gunaLabel32);
             this.gunaShadowPanel11.Controls.Add(gunaLabel33);
             this.gunaShadowPanel11.Controls.Add(this.gunaPictureBox8);
-            this.gunaShadowPanel11.Location = new System.Drawing.Point(163, 244);
+            this.gunaShadowPanel11.Location = new System.Drawing.Point(167, 246);
             this.gunaShadowPanel11.Margin = new System.Windows.Forms.Padding(10, 5, 3, 3);
             this.gunaShadowPanel11.Name = "gunaShadowPanel11";
             this.gunaShadowPanel11.Radius = 5;
@@ -473,11 +516,12 @@
             this.gunaShadowPanel11.Size = new System.Drawing.Size(120, 196);
             this.gunaShadowPanel11.TabIndex = 8;
             this.gunaShadowPanel11.Click += new System.EventHandler(this.gunaShadowPanel11_Click);
+            this.gunaShadowPanel11.MouseLeave += new System.EventHandler(this.gunaShadowPanel11_MouseLeave);
+            this.gunaShadowPanel11.MouseHover += new System.EventHandler(this.gunaShadowPanel11_MouseHover);
             // 
             // gunaLabel32
             // 
-            this.gunaLabel32.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaLabel32.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.gunaLabel32.AutoSize = true;
             this.gunaLabel32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.gunaLabel32.Font = new System.Drawing.Font("Google Sans", 7F);
@@ -489,6 +533,8 @@
             this.gunaLabel32.Text = "Puzzle game";
             this.gunaLabel32.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
             this.gunaLabel32.Click += new System.EventHandler(this.gunaShadowPanel11_Click);
+            this.gunaLabel32.MouseLeave += new System.EventHandler(this.gunaShadowPanel11_MouseLeave);
+            this.gunaLabel32.MouseHover += new System.EventHandler(this.gunaShadowPanel11_MouseHover);
             // 
             // gunaPictureBox8
             // 
@@ -503,6 +549,8 @@
             this.gunaPictureBox8.TabIndex = 5;
             this.gunaPictureBox8.TabStop = false;
             this.gunaPictureBox8.Click += new System.EventHandler(this.gunaShadowPanel11_Click);
+            this.gunaPictureBox8.MouseLeave += new System.EventHandler(this.gunaShadowPanel11_MouseLeave);
+            this.gunaPictureBox8.MouseHover += new System.EventHandler(this.gunaShadowPanel11_MouseHover);
             // 
             // gunaShadowPanel10
             // 
@@ -511,7 +559,7 @@
             this.gunaShadowPanel10.Controls.Add(this.gunaLabel26);
             this.gunaShadowPanel10.Controls.Add(gunaLabel27);
             this.gunaShadowPanel10.Controls.Add(this.gunaPictureBox6);
-            this.gunaShadowPanel10.Location = new System.Drawing.Point(296, 244);
+            this.gunaShadowPanel10.Location = new System.Drawing.Point(300, 246);
             this.gunaShadowPanel10.Margin = new System.Windows.Forms.Padding(10, 5, 3, 3);
             this.gunaShadowPanel10.Name = "gunaShadowPanel10";
             this.gunaShadowPanel10.Radius = 5;
@@ -520,11 +568,12 @@
             this.gunaShadowPanel10.Size = new System.Drawing.Size(120, 196);
             this.gunaShadowPanel10.TabIndex = 7;
             this.gunaShadowPanel10.Click += new System.EventHandler(this.gunaShadowPanel10_Click);
+            this.gunaShadowPanel10.MouseLeave += new System.EventHandler(this.gunaShadowPanel10_MouseLeave);
+            this.gunaShadowPanel10.MouseHover += new System.EventHandler(this.gunaShadowPanel10_MouseHover);
             // 
             // gunaLabel26
             // 
-            this.gunaLabel26.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaLabel26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel26.AutoSize = true;
             this.gunaLabel26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.gunaLabel26.Font = new System.Drawing.Font("Google Sans", 7F);
@@ -536,6 +585,8 @@
             this.gunaLabel26.Text = "Tap tap tap!";
             this.gunaLabel26.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
             this.gunaLabel26.Click += new System.EventHandler(this.gunaShadowPanel10_Click);
+            this.gunaLabel26.MouseLeave += new System.EventHandler(this.gunaShadowPanel10_MouseLeave);
+            this.gunaLabel26.MouseHover += new System.EventHandler(this.gunaShadowPanel10_MouseHover);
             // 
             // gunaPictureBox6
             // 
@@ -550,27 +601,30 @@
             this.gunaPictureBox6.TabIndex = 5;
             this.gunaPictureBox6.TabStop = false;
             this.gunaPictureBox6.Click += new System.EventHandler(this.gunaShadowPanel10_Click);
+            this.gunaPictureBox6.MouseLeave += new System.EventHandler(this.gunaShadowPanel10_MouseLeave);
+            this.gunaPictureBox6.MouseHover += new System.EventHandler(this.gunaShadowPanel10_MouseHover);
             // 
-            // gunaShadowPanel5
+            // comingSPanel
             // 
-            this.gunaShadowPanel5.BackColor = System.Drawing.Color.Transparent;
-            this.gunaShadowPanel5.BaseColor = System.Drawing.Color.Silver;
-            this.gunaShadowPanel5.Controls.Add(this.gunaLabel9);
-            this.gunaShadowPanel5.Controls.Add(gunaLabel10);
-            this.gunaShadowPanel5.Controls.Add(this.gunaPictureBox7);
-            this.gunaShadowPanel5.Location = new System.Drawing.Point(429, 244);
-            this.gunaShadowPanel5.Margin = new System.Windows.Forms.Padding(10, 5, 3, 3);
-            this.gunaShadowPanel5.Name = "gunaShadowPanel5";
-            this.gunaShadowPanel5.Radius = 5;
-            this.gunaShadowPanel5.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.gunaShadowPanel5.ShadowStyle = Guna.UI.WinForms.ShadowMode.Dropped;
-            this.gunaShadowPanel5.Size = new System.Drawing.Size(120, 196);
-            this.gunaShadowPanel5.TabIndex = 8;
+            this.comingSPanel.BackColor = System.Drawing.Color.Transparent;
+            this.comingSPanel.BaseColor = System.Drawing.Color.Silver;
+            this.comingSPanel.Controls.Add(this.gunaLabel9);
+            this.comingSPanel.Controls.Add(gunaLabel10);
+            this.comingSPanel.Controls.Add(this.gunaPictureBox7);
+            this.comingSPanel.Location = new System.Drawing.Point(433, 246);
+            this.comingSPanel.Margin = new System.Windows.Forms.Padding(10, 5, 3, 3);
+            this.comingSPanel.Name = "comingSPanel";
+            this.comingSPanel.Radius = 5;
+            this.comingSPanel.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.comingSPanel.ShadowStyle = Guna.UI.WinForms.ShadowMode.Dropped;
+            this.comingSPanel.Size = new System.Drawing.Size(120, 196);
+            this.comingSPanel.TabIndex = 8;
+            this.comingSPanel.MouseLeave += new System.EventHandler(this.comingSPanel_MouseLeave);
+            this.comingSPanel.MouseHover += new System.EventHandler(this.comingSPanel_MouseHover);
             // 
             // gunaLabel9
             // 
-            this.gunaLabel9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaLabel9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel9.AutoSize = true;
             this.gunaLabel9.Enabled = false;
             this.gunaLabel9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -582,6 +636,8 @@
             this.gunaLabel9.TabIndex = 1;
             this.gunaLabel9.Text = "Upcoming...";
             this.gunaLabel9.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
+            this.gunaLabel9.MouseLeave += new System.EventHandler(this.comingSPanel_MouseLeave);
+            this.gunaLabel9.MouseHover += new System.EventHandler(this.comingSPanel_MouseHover);
             // 
             // gunaPictureBox7
             // 
@@ -595,22 +651,29 @@
             this.gunaPictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gunaPictureBox7.TabIndex = 5;
             this.gunaPictureBox7.TabStop = false;
+            this.gunaPictureBox7.MouseLeave += new System.EventHandler(this.comingSPanel_MouseLeave);
+            this.gunaPictureBox7.MouseHover += new System.EventHandler(this.comingSPanel_MouseHover);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 10;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.gunaShadowPanel1);
             this.flowLayoutPanel1.Controls.Add(this.foodwebPanel);
+            this.flowLayoutPanel1.Controls.Add(this.comingSPanel);
             this.flowLayoutPanel1.Controls.Add(this.gunaShadowPanel3);
-            this.flowLayoutPanel1.Controls.Add(this.gunaShadowPanel4);
-            this.flowLayoutPanel1.Controls.Add(this.gunaShadowPanel12);
-            this.flowLayoutPanel1.Controls.Add(this.gunaShadowPanel11);
             this.flowLayoutPanel1.Controls.Add(this.gunaShadowPanel10);
-            this.flowLayoutPanel1.Controls.Add(this.gunaShadowPanel5);
+            this.flowLayoutPanel1.Controls.Add(this.gunaShadowPanel4);
+            this.flowLayoutPanel1.Controls.Add(this.gunaShadowPanel11);
+            this.flowLayoutPanel1.Controls.Add(this.gunaShadowPanel12);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(588, 541);
-            this.flowLayoutPanel1.TabIndex = 9;
+            this.flowLayoutPanel1.TabIndex = 10;
             // 
             // videoLearn1
             // 
@@ -659,8 +722,8 @@
             this.gunaShadowPanel10.ResumeLayout(false);
             this.gunaShadowPanel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox6)).EndInit();
-            this.gunaShadowPanel5.ResumeLayout(false);
-            this.gunaShadowPanel5.PerformLayout();
+            this.comingSPanel.ResumeLayout(false);
+            this.comingSPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox7)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -688,12 +751,13 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel26;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox6;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox5;
-        private Guna.UI.WinForms.GunaShadowPanel gunaShadowPanel5;
+        private Guna.UI.WinForms.GunaShadowPanel comingSPanel;
         private Guna.UI.WinForms.GunaLabel gunaLabel9;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox7;
         public Guna.UI.WinForms.GunaShadowPanel foodwebPanel;
         private Document document1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         public VideoLearn videoLearn1;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel flowLayoutPanel1;
     }
 }

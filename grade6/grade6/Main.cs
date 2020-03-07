@@ -14,7 +14,7 @@ namespace grade6
     public partial class Form1 : Form
     {
         public SoundPlayer unlock = new SoundPlayer(Properties.Resources.unlock);
-        
+
         public Form1()
         {
             InitializeComponent();
@@ -29,20 +29,15 @@ namespace grade6
 
         private void gunaShadowPanel1_MouseHover(object sender, EventArgs e)
         {
-            gunaShadowPanel1.ShadowDepth = 0;
-            gunaShadowPanel1.ShadowShift = 2;
-            gunaElipse1.Radius = 15;
-            gunaShadowPanel1.Width = 114;
-            gunaShadowPanel1.Height = 160;
+            panels = gunaShadowPanel1;
+            elips = gunaElipse1;
+            animation.Start();
         }
 
         private void gunaShadowPanel1_MouseLeave(object sender, EventArgs e)
         {
-            gunaShadowPanel1.ShadowDepth = 50;
-            gunaShadowPanel1.ShadowShift = 5;
-            gunaElipse1.Radius = 8;
-            gunaShadowPanel1.Width = 110;
-            gunaShadowPanel1.Height = 154;
+            elips = gunaElipse1;
+            Back(gunaShadowPanel1);
         }
 
         private void gunaHScrollBar1_ValueChanged(object sender, EventArgs e)
@@ -53,135 +48,80 @@ namespace grade6
 
         private void gunaShadowPanel2_MouseHover(object sender, EventArgs e)
         {
-            gunaShadowPanel2.ShadowDepth = 0;
-            gunaShadowPanel2.ShadowShift = 2;
-            gunaElipse2.Radius = 15;
-            gunaShadowPanel2.Width = 114;
-            gunaShadowPanel2.Height = 160;
+            panels = gunaShadowPanel2;
+            elips = gunaElipse2;
+            animation.Start();
         }
 
         private void gunaShadowPanel2_MouseLeave(object sender, EventArgs e)
         {
-            gunaShadowPanel2.ShadowDepth = 50;
-            gunaShadowPanel2.ShadowShift = 5;
-            gunaElipse2.Radius = 8;
-            gunaShadowPanel2.Width = 110;
-            gunaShadowPanel2.Height = 154;
+            elips = gunaElipse2;
+            Back(gunaShadowPanel2);
         }
 
         private void gunaShadowPanel3_MouseHover(object sender, EventArgs e)
         {
-            gunaShadowPanel3.ShadowDepth = 0;
-            gunaShadowPanel3.ShadowShift = 2;
-            gunaElipse3.Radius = 15;
-            gunaShadowPanel3.Width = 114;
-            gunaShadowPanel3.Height = 160;
+            panels = gunaShadowPanel3;
+            elips = gunaElipse3;
+            animation.Start();
         }
 
         private void gunaShadowPanel3_MouseLeave(object sender, EventArgs e)
         {
-            gunaShadowPanel3.ShadowDepth = 50;
-            gunaShadowPanel3.ShadowShift = 5;
-            gunaElipse3.Radius = 8;
-            gunaShadowPanel3.Width = 110;
-            gunaShadowPanel3.Height = 154;
+            elips = gunaElipse3;
+            Back(gunaShadowPanel3);
         }
 
         private void gunaShadowPanel4_MouseHover(object sender, EventArgs e)
         {
-            gunaShadowPanel4.ShadowDepth = 0;
-            gunaShadowPanel4.ShadowShift = 2;
-            gunaElipse4.Radius = 15;
-            gunaShadowPanel4.Width = 114;
-            gunaShadowPanel4.Height = 160;
+            panels = gunaShadowPanel4;
+            elips = gunaElipse4;
+            animation.Start();
         }
 
         private void gunaShadowPanel4_MouseLeave(object sender, EventArgs e)
         {
-            gunaShadowPanel4.ShadowDepth = 50;
-            gunaShadowPanel4.ShadowShift = 5;
-            gunaElipse4.Radius = 8;
-            gunaShadowPanel4.Width = 110;
-            gunaShadowPanel4.Height = 154;
-        }
-
-        private void gunaShadowPanel8_MouseHover(object sender, EventArgs e)
-        {
-            gunaShadowPanel8.Width = 156;
-            gunaShadowPanel8.Height = 87;
-        }
-
-        private void gunaShadowPanel8_MouseLeave(object sender, EventArgs e)
-        {
-            gunaShadowPanel8.Width = 146;
-            gunaShadowPanel8.Height = 77;
-        }
-
-        private void chat1_MouseHover(object sender, EventArgs e)
-        {
-            chat1.Width = 156;
-            chat1.Height = 87;
-        }
-
-        private void chat1_MouseLeave(object sender, EventArgs e)
-        {
-            chat1.Width = 146;
-            chat1.Height = 77;
+            elips = gunaElipse4;
+            Back(gunaShadowPanel4);
         }
 
         private void gunaShadowPanel10_MouseHover(object sender, EventArgs e)
         {
-            gunaShadowPanel10.ShadowDepth = 0;
-            gunaShadowPanel10.ShadowShift = 2;
-            gunaElipse5.Radius = 15;
-            gunaShadowPanel10.Width = 114;
-            gunaShadowPanel10.Height = 160;
+            panels = gunaShadowPanel10;
+            elips = gunaElipse5;
+            animation.Start();
         }
 
         private void gunaShadowPanel10_MouseLeave(object sender, EventArgs e)
         {
-            gunaShadowPanel10.ShadowDepth = 50;
-            gunaShadowPanel10.ShadowShift = 5;
-            gunaElipse5.Radius = 8;
-            gunaShadowPanel10.Width = 110;
-            gunaShadowPanel10.Height = 154;
+            elips = gunaElipse5;
+            Back(gunaShadowPanel10);
         }
-        
 
         private void gunaShadowPanel11_MouseHover(object sender, EventArgs e)
         {
-            gunaShadowPanel11.ShadowDepth = 0;
-            gunaShadowPanel11.ShadowShift = 2;
-            gunaElipse6.Radius = 15;
-            gunaShadowPanel11.Width = 114;
-            gunaShadowPanel11.Height = 160;
+            panels = gunaShadowPanel11;
+            elips = gunaElipse6;
+            animation.Start();
         }
 
         private void gunaShadowPanel11_MouseLeave(object sender, EventArgs e)
         {
-            gunaShadowPanel11.ShadowDepth = 50;
-            gunaShadowPanel11.ShadowShift = 5;
-            gunaElipse6.Radius = 8;
-            gunaShadowPanel11.Width = 110;
-            gunaShadowPanel11.Height = 154;
+            elips = gunaElipse6;
+            Back(gunaShadowPanel11);
         }
 
         private void gunaShadowPanel12_MouseHover(object sender, EventArgs e)
         {
-            gunaShadowPanel12.ShadowDepth = 0;
-            gunaShadowPanel12.ShadowShift = 2;
-            gunaElipse7.Radius = 15;
-            gunaShadowPanel12.Width = 114;
-            gunaShadowPanel12.Height = 160;
+            panels = gunaShadowPanel12;
+            elips = gunaElipse7;
+            animation.Start();
         }
 
         private void gunaShadowPanel12_MouseLeave(object sender, EventArgs e)
         {
-            gunaShadowPanel12.ShadowDepth = 50;
-            gunaShadowPanel12.ShadowShift = 5;
-            gunaElipse7.Radius = 8;
-            gunaShadowPanel12.Width = 110;
-            gunaShadowPanel12.Height = 154;
+            elips = gunaElipse7;
+            Back(gunaShadowPanel12);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -252,6 +192,7 @@ namespace grade6
         {
             learnButton_Click(sender, e);
             learn1.gunaShadowPanel2_Click(sender, e);
+            learnButton.Checked = true;
         }
 
         private void readLabel_Click(object sender, EventArgs e)
@@ -347,5 +288,77 @@ namespace grade6
             this.Alert("you unlock a hidden video", Notification.enmType.Success);
 
         }
+
+        Guna.UI.WinForms.GunaShadowPanel panels;
+        Guna.UI.WinForms.GunaElipse elips;
+        void Back(Guna.UI.WinForms.GunaShadowPanel panelss)
+        {
+            panelss.Height = 154;
+            panelss.Width = 110;
+            panelss.ShadowDepth = 50;
+            panelss.ShadowShift = 5;
+            elips.Radius = 8;
+        }
+        private void animation_Tick(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 2; i++)
+            {
+                if (panels.Height <= 160)
+                {
+                    panels.Height += 1;
+                    panels.Width += 1;
+                    panels.ShadowDepth = 0;
+                    panels.ShadowShift = 2;
+                    elips.Radius = 10;
+                    if (panels.Height == 160 || panels.Width == 114)
+                    {
+                        animation.Stop();
+                    }
+                }
+            }
+        }
+
+        private void animation2_Tick(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                if (panels.Height <= 87)
+                {
+                    panels.Height += 1;
+                    panels.Width += 1;
+                    if (panels.Height == 87 || panels.Width == 156)
+                    {
+                        animation2.Stop();
+                    }
+                }
+            }
+        }
+        void Back2(Guna.UI.WinForms.GunaShadowPanel panelss)
+        {
+            panelss.Height = 77;
+            panelss.Width = 146;
+        }
+        private void gunaShadowPanel8_MouseHover(object sender, EventArgs e)
+        {
+            panels = gunaShadowPanel8;
+            animation2.Start();
+        }
+
+        private void gunaShadowPanel8_MouseLeave(object sender, EventArgs e)
+        {
+            Back2(gunaShadowPanel8);
+        }
+
+        private void chat1_MouseHover(object sender, EventArgs e)
+        {
+            panels = chat1;
+            animation2.Start();
+        }
+
+        private void chat1_MouseLeave(object sender, EventArgs e)
+        {
+            Back2(chat1);
+        }
+
     }
 }

@@ -21,5 +21,10 @@ namespace grade6
         {
             this.SendToBack();
         }
+
+        private void gunaVScrollBar1_ValueChanged(object sender, EventArgs e)
+        {
+            elements.AutoScrollPosition = new Point(0, gunaVScrollBar1.Value);
+        }
     }
 }

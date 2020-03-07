@@ -19,6 +19,7 @@ namespace grade6
         
         private void VideoLearn_Load(object sender, EventArgs e)
         {
+            //question.Hide();
             
         }
         public bool isPlay = false;
@@ -65,11 +66,33 @@ namespace grade6
             {
                 gunaCircleButton1.Image = Properties.Resources.pause_button_100px;
                 isPlay = true;
+                label.Visible = false;
             }
             else if (player.playState == WMPLib.WMPPlayState.wmppsStopped)
             {
                 gunaCircleButton1.Image = Properties.Resources.play_button_circled_96px;
                 isPlay = false;
+                label.Visible = true;
+            }
+            else if (player.playState == WMPLib.WMPPlayState.wmppsMediaEnded)
+            {
+                question.Show();
+            }
+        }
+
+        private void titleLabel_TextChanged(object sender, EventArgs e)
+        {
+            label.Text = titleLabel.Text;
+        }
+
+        private void stopButton_Click(object sender, EventArgs e)
+        {
+            if (player.playState == WMPLib.WMPPlayState.wmppsPlaying || player.playState == WMPLib.WMPPlayState.wmppsPaused)
+            {
+                player.Ctlcontrols.stop(); ;
+                gunaCircleButton1.Image = Properties.Resources.play_button_circled_96px;
+                isPlay = false;
+                label.Visible = true;
             }
         }
     }
