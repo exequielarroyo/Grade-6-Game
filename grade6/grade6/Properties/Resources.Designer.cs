@@ -153,9 +153,49 @@ namespace grade6.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _82786500_2529378737189209_8496110288389537792_o {
+            get {
+                object obj = ResourceManager.GetObject("82786500_2529378737189209_8496110288389537792_o", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _84437434_1634044810071790_1250668586532339712_o {
+            get {
+                object obj = ResourceManager.GetObject("84437434_1634044810071790_1250668586532339712_o", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _84718532_3524186330956247_4660041058053259264_n {
+            get {
+                object obj = ResourceManager.GetObject("84718532_3524186330956247_4660041058053259264_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _85080 {
             get {
                 object obj = ResourceManager.GetObject("85080", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _87025871_1477287375761653_299504257281818624_n {
+            get {
+                object obj = ResourceManager.GetObject("87025871_1477287375761653_299504257281818624_n", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -423,5 +423,17 @@
   <ItemGroup>
     <None Include="Resources\foodchain %288%291.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\84718532_3524186330956247_4660041058053259264_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\82786500_2529378737189209_8496110288389537792_o.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\87025871_1477287375761653_299504257281818624_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\84437434_1634044810071790_1250668586532339712_o.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

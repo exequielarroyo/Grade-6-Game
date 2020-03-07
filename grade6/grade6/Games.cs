@@ -20,6 +20,7 @@ namespace grade6
         private void Games_Load(object sender, EventArgs e)
         {
             listGames.BringToFront();
+            gunaVScrollBar1.BringToFront();
         }
 
         private void producerConsumer_Click(object sender, EventArgs e)
@@ -30,6 +31,11 @@ namespace grade6
         private void foodChain_Click(object sender, EventArgs e)
         {
             gFoodChain1.BringToFront();
+        }
+
+        private void gunaVScrollBar1_ValueChanged(object sender, EventArgs e)
+        {
+            listGames.AutoScrollPosition = new Point(0, gunaVScrollBar1.Value);
         }
     }
 }
