@@ -76,7 +76,6 @@ namespace grade6
             }
             else if (player.playState == WMPLib.WMPPlayState.wmppsMediaEnded)
             {
-                question.Show();
             }
         }
 

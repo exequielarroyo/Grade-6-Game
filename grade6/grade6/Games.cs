@@ -26,5 +26,10 @@ namespace grade6
         {
             gProducerCnsumer1.BringToFront();
         }
+
+        private void foodChain_Click(object sender, EventArgs e)
+        {
+            gFoodChain1.BringToFront();
+        }
     }
 }

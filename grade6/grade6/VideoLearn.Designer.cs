@@ -40,7 +40,6 @@
             this.gunaCircleButton1 = new Guna.UI.WinForms.GunaCircleButton();
             this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.player = new AxWMPLib.AxWindowsMediaPlayer();
-            this.question = new grade6.Question();
             this.gunaElipsePanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             this.SuspendLayout();
@@ -54,7 +53,6 @@
             // 
             this.gunaElipsePanel1.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel1.BaseColor = System.Drawing.Color.White;
-            this.gunaElipsePanel1.Controls.Add(this.question);
             this.gunaElipsePanel1.Controls.Add(this.label);
             this.gunaElipsePanel1.Controls.Add(this.player);
             this.gunaElipsePanel1.Location = new System.Drawing.Point(27, 91);
@@ -237,14 +235,7 @@
             this.player.Size = new System.Drawing.Size(534, 300);
             this.player.TabIndex = 0;
             this.player.PlayStateChange += new AxWMPLib._WMPOCXEvents_PlayStateChangeEventHandler(this.player_PlayStateChange);
-            // 
-            // question
-            // 
-            this.question.BackColor = System.Drawing.Color.Black;
-            this.question.Location = new System.Drawing.Point(-27, -21);
-            this.question.Name = "question";
-            this.question.Size = new System.Drawing.Size(588, 321);
-            this.question.TabIndex = 13;
+            
             // 
             // VideoLearn
             // 
@@ -279,6 +270,5 @@
         public Guna.UI.WinForms.GunaLabel label;
         public Guna.UI.WinForms.GunaCircleButton stopButton;
         private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton1;
-        private Question question;
     }
 }

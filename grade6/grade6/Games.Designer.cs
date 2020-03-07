@@ -37,10 +37,11 @@
             Guna.UI.WinForms.GunaLabel gunaLabel10;
             Guna.UI.WinForms.GunaLabel gunaLabel12;
             this.listGames = new System.Windows.Forms.FlowLayoutPanel();
-            this.gunaShadowPanel1 = new Guna.UI.WinForms.GunaShadowPanel();
+            this.foodChain = new Guna.UI.WinForms.GunaShadowPanel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.foodwebPanel = new Guna.UI.WinForms.GunaShadowPanel();
+            this.gunaLabel11 = new Guna.UI.WinForms.GunaLabel();
             this.gunaPictureBox2 = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaShadowPanel3 = new Guna.UI.WinForms.GunaShadowPanel();
             this.gunaPictureBox4 = new Guna.UI.WinForms.GunaPictureBox();
@@ -61,7 +62,7 @@
             this.gunaLabel9 = new Guna.UI.WinForms.GunaLabel();
             this.gunaPictureBox7 = new Guna.UI.WinForms.GunaPictureBox();
             this.gProducerCnsumer1 = new grade6.GProducerConsumer();
-            this.gunaLabel11 = new Guna.UI.WinForms.GunaLabel();
+            this.gFoodChain1 = new grade6.GFoodChain();
             gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
             gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
@@ -71,7 +72,7 @@
             gunaLabel10 = new Guna.UI.WinForms.GunaLabel();
             gunaLabel12 = new Guna.UI.WinForms.GunaLabel();
             this.listGames.SuspendLayout();
-            this.gunaShadowPanel1.SuspendLayout();
+            this.foodChain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             this.foodwebPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).BeginInit();
@@ -103,6 +104,7 @@
             gunaLabel1.TabIndex = 0;
             gunaLabel1.Text = "Food Chain";
             gunaLabel1.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
+            gunaLabel1.Click += new System.EventHandler(this.foodChain_Click);
             // 
             // gunaLabel6
             // 
@@ -196,10 +198,25 @@
             gunaLabel10.Text = "COMING\r\nSOON!";
             gunaLabel10.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
             // 
+            // gunaLabel12
+            // 
+            gunaLabel12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            gunaLabel12.AutoSize = true;
+            gunaLabel12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            gunaLabel12.Font = new System.Drawing.Font("Google Sans", 9F);
+            gunaLabel12.ForeColor = System.Drawing.Color.White;
+            gunaLabel12.Location = new System.Drawing.Point(126, 29);
+            gunaLabel12.Name = "gunaLabel12";
+            gunaLabel12.Size = new System.Drawing.Size(61, 15);
+            gunaLabel12.TabIndex = 6;
+            gunaLabel12.Text = "Food Web";
+            gunaLabel12.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
+            // 
             // listGames
             // 
             this.listGames.AutoScroll = true;
-            this.listGames.Controls.Add(this.gunaShadowPanel1);
+            this.listGames.Controls.Add(this.foodChain);
             this.listGames.Controls.Add(this.foodwebPanel);
             this.listGames.Controls.Add(this.gunaShadowPanel3);
             this.listGames.Controls.Add(this.gunaShadowPanel4);
@@ -207,28 +224,28 @@
             this.listGames.Controls.Add(this.producerConsumer);
             this.listGames.Controls.Add(this.gunaShadowPanel10);
             this.listGames.Controls.Add(this.gunaShadowPanel5);
-            this.listGames.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listGames.Location = new System.Drawing.Point(0, 0);
             this.listGames.Name = "listGames";
             this.listGames.Size = new System.Drawing.Size(588, 541);
             this.listGames.TabIndex = 10;
             // 
-            // gunaShadowPanel1
+            // foodChain
             // 
-            this.gunaShadowPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaShadowPanel1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(209)))), ((int)(((byte)(224)))));
-            this.gunaShadowPanel1.Controls.Add(this.gunaLabel2);
-            this.gunaShadowPanel1.Controls.Add(gunaLabel1);
-            this.gunaShadowPanel1.Controls.Add(this.gunaPictureBox1);
-            this.gunaShadowPanel1.Location = new System.Drawing.Point(30, 40);
-            this.gunaShadowPanel1.Margin = new System.Windows.Forms.Padding(30, 40, 3, 3);
-            this.gunaShadowPanel1.Name = "gunaShadowPanel1";
-            this.gunaShadowPanel1.Radius = 5;
-            this.gunaShadowPanel1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.gunaShadowPanel1.ShadowDepth = 50;
-            this.gunaShadowPanel1.ShadowStyle = Guna.UI.WinForms.ShadowMode.Dropped;
-            this.gunaShadowPanel1.Size = new System.Drawing.Size(519, 129);
-            this.gunaShadowPanel1.TabIndex = 3;
+            this.foodChain.BackColor = System.Drawing.Color.Transparent;
+            this.foodChain.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(209)))), ((int)(((byte)(224)))));
+            this.foodChain.Controls.Add(this.gunaLabel2);
+            this.foodChain.Controls.Add(gunaLabel1);
+            this.foodChain.Controls.Add(this.gunaPictureBox1);
+            this.foodChain.Location = new System.Drawing.Point(30, 40);
+            this.foodChain.Margin = new System.Windows.Forms.Padding(30, 40, 3, 3);
+            this.foodChain.Name = "foodChain";
+            this.foodChain.Radius = 5;
+            this.foodChain.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.foodChain.ShadowDepth = 50;
+            this.foodChain.ShadowStyle = Guna.UI.WinForms.ShadowMode.Dropped;
+            this.foodChain.Size = new System.Drawing.Size(519, 129);
+            this.foodChain.TabIndex = 3;
+            this.foodChain.Click += new System.EventHandler(this.foodChain_Click);
             // 
             // gunaLabel2
             // 
@@ -244,6 +261,7 @@
             this.gunaLabel2.TabIndex = 1;
             this.gunaLabel2.Text = "Arrange the food chain";
             this.gunaLabel2.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
+            this.gunaLabel2.Click += new System.EventHandler(this.foodChain_Click);
             // 
             // gunaPictureBox1
             // 
@@ -256,6 +274,7 @@
             this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gunaPictureBox1.TabIndex = 5;
             this.gunaPictureBox1.TabStop = false;
+            this.gunaPictureBox1.Click += new System.EventHandler(this.foodChain_Click);
             // 
             // foodwebPanel
             // 
@@ -273,6 +292,21 @@
             this.foodwebPanel.ShadowStyle = Guna.UI.WinForms.ShadowMode.Dropped;
             this.foodwebPanel.Size = new System.Drawing.Size(519, 129);
             this.foodwebPanel.TabIndex = 4;
+            // 
+            // gunaLabel11
+            // 
+            this.gunaLabel11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaLabel11.AutoSize = true;
+            this.gunaLabel11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.gunaLabel11.Font = new System.Drawing.Font("Google Sans", 11F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel11.ForeColor = System.Drawing.Color.White;
+            this.gunaLabel11.Location = new System.Drawing.Point(126, 11);
+            this.gunaLabel11.Name = "gunaLabel11";
+            this.gunaLabel11.Size = new System.Drawing.Size(163, 18);
+            this.gunaLabel11.TabIndex = 7;
+            this.gunaLabel11.Text = "Identify the organism";
+            this.gunaLabel11.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
             // 
             // gunaPictureBox2
             // 
@@ -572,35 +606,13 @@
             this.gProducerCnsumer1.Size = new System.Drawing.Size(588, 541);
             this.gProducerCnsumer1.TabIndex = 0;
             // 
-            // gunaLabel11
+            // gFoodChain1
             // 
-            this.gunaLabel11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.gunaLabel11.AutoSize = true;
-            this.gunaLabel11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.gunaLabel11.Font = new System.Drawing.Font("Google Sans", 11F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel11.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel11.Location = new System.Drawing.Point(126, 11);
-            this.gunaLabel11.Name = "gunaLabel11";
-            this.gunaLabel11.Size = new System.Drawing.Size(163, 18);
-            this.gunaLabel11.TabIndex = 7;
-            this.gunaLabel11.Text = "Identify the organism";
-            this.gunaLabel11.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
-            // 
-            // gunaLabel12
-            // 
-            gunaLabel12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            gunaLabel12.AutoSize = true;
-            gunaLabel12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            gunaLabel12.Font = new System.Drawing.Font("Google Sans", 9F);
-            gunaLabel12.ForeColor = System.Drawing.Color.White;
-            gunaLabel12.Location = new System.Drawing.Point(126, 29);
-            gunaLabel12.Name = "gunaLabel12";
-            gunaLabel12.Size = new System.Drawing.Size(61, 15);
-            gunaLabel12.TabIndex = 6;
-            gunaLabel12.Text = "Food Web";
-            gunaLabel12.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
+            this.gFoodChain1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gFoodChain1.Location = new System.Drawing.Point(0, 0);
+            this.gFoodChain1.Name = "gFoodChain1";
+            this.gFoodChain1.Size = new System.Drawing.Size(588, 541);
+            this.gFoodChain1.TabIndex = 11;
             // 
             // Games
             // 
@@ -608,12 +620,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.listGames);
             this.Controls.Add(this.gProducerCnsumer1);
+            this.Controls.Add(this.gFoodChain1);
             this.Name = "Games";
             this.Size = new System.Drawing.Size(588, 541);
             this.Load += new System.EventHandler(this.Games_Load);
             this.listGames.ResumeLayout(false);
-            this.gunaShadowPanel1.ResumeLayout(false);
-            this.gunaShadowPanel1.PerformLayout();
+            this.foodChain.ResumeLayout(false);
+            this.foodChain.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
             this.foodwebPanel.ResumeLayout(false);
             this.foodwebPanel.PerformLayout();
@@ -644,7 +657,7 @@
 
         private GProducerConsumer gProducerCnsumer1;
         private System.Windows.Forms.FlowLayoutPanel listGames;
-        private Guna.UI.WinForms.GunaShadowPanel gunaShadowPanel1;
+        private Guna.UI.WinForms.GunaShadowPanel foodChain;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
         public Guna.UI.WinForms.GunaShadowPanel foodwebPanel;
@@ -668,5 +681,6 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel9;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox7;
         private Guna.UI.WinForms.GunaLabel gunaLabel11;
+        private GFoodChain gFoodChain1;
     }
 }
