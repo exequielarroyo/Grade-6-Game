@@ -83,9 +83,29 @@ namespace grade6.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1interface {
+            get {
+                object obj = ResourceManager.GetObject("1interface", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _2 {
             get {
                 object obj = ResourceManager.GetObject("2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2Asset_1 {
+            get {
+                object obj = ResourceManager.GetObject("2Asset 1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -256,6 +276,26 @@ namespace grade6.Properties {
         internal static System.Drawing.Bitmap carnivore {
             get {
                 object obj = ResourceManager.GetObject("carnivore", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap checked_checkbox_60px {
+            get {
+                object obj = ResourceManager.GetObject("checked_checkbox_60px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap checkmark_48px {
+            get {
+                object obj = ResourceManager.GetObject("checkmark_48px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -446,6 +486,16 @@ namespace grade6.Properties {
         internal static System.Drawing.Bitmap information_48px {
             get {
                 object obj = ResourceManager.GetObject("information_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_2048x {
+            get {
+                object obj = ResourceManager.GetObject("logo_2048x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

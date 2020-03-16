@@ -22,7 +22,15 @@ namespace grade6
             flowLayoutPanel1.BringToFront();
 
         }
-
+        
+        public bool foodChain = false;
+        public bool foodweb = false;
+        public bool herbivoreAnimals = false;
+        public bool carnivoreAnimals = false;
+        public bool omnivoreAnimals = false;
+        public bool producer = false;
+        public bool decomposer = false;
+        
         public void gunaShadowPanel1_Click(object sender, EventArgs e)
         {
             flowLayoutPanel1.SendToBack();
@@ -30,7 +38,6 @@ namespace grade6
             videoLearn1.player.URL = Application.StartupPath + "\\Fabulous Food Chains- Crash Course Kids #7.1.mp4";
             videoLearn1.titleLabel.Text = "Food Chain";
             videoLearn1.label.Text = "Fabulous Food Chains- Crash Course Kids";
-            
         }
 
         public void gunaShadowPanel2_Click(object sender, EventArgs e)
@@ -202,5 +209,5 @@ namespace grade6
         {
             Back(gunaShadowPanel12);
         }
-        }
+    }
 }

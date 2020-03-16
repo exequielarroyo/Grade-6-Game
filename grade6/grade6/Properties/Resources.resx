@@ -118,11 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="hand_cursor_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hand_cursor_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="85080" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\85080.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_2048x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo_2048x.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="decomposer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\decomposer.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,11 +130,17 @@
   <data name="producer&amp;consumer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\producer&amp;consumer.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="circled_play_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\circled_play_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="foodchain (7)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\foodchain (7)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="full_screen_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\full_screen_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="foodchain (8)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\foodchain (8)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="brave-explorers-overworld-menu-dribbble" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\brave-explorers-overworld-menu-dribbble.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,6 +160,9 @@
   <data name="play_button_circled_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\play_button_circled_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="sound_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sound_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="foodchain (7)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\foodchain (7).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -163,8 +172,8 @@
   <data name="mqdefault" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mqdefault.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="87025871_1477287375761653_299504257281818624_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\87025871_1477287375761653_299504257281818624_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="82786500_2529378737189209_8496110288389537792_o" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\82786500_2529378737189209_8496110288389537792_o.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="foodweb" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\foodweb.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,29 +181,35 @@
   <data name="circled_play_48px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\circled_play_48px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\9.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\7.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="null" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\null.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pause_button_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pause_button_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="foodchain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\foodchain.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="herbivore" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\herbivore.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logout_rounded_left_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logout_rounded_left_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="checkmark_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\checkmark_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="snow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\snow.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="foodchain (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\foodchain (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,29 +220,32 @@
   <data name="comingsoon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\comingsoon.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="84437434_1634044810071790_1250668586532339712_o" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\84437434_1634044810071790_1250668586532339712_o.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2Asset 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2Asset 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="mountain-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mountain-1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="foodchain (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\foodchain (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1 (10)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1 (10).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="add_user_male_52px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add_user_male_52px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sound_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sound_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="play_button_circled_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\play_button_circled_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="foodchain" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\foodchain.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="go_back_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\go_back_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rook_60px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rook_60px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="unlock_53px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\unlock_53px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="play_button_circled_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\play_button_circled_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="checked_checkbox_60px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\checked_checkbox_60px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bulleted_list_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bulleted_list_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -235,11 +253,11 @@
   <data name="information_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\information_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="circled_play_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\circled_play_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="go_back_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\go_back_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\9.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pause_button_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pause_button_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="settings_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\settings_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -250,14 +268,14 @@
   <data name="stop_52px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\stop_52px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="82786500_2529378737189209_8496110288389537792_o" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\82786500_2529378737189209_8496110288389537792_o.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hand_cursor_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hand_cursor_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="readme" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\readme.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\8.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\7.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="84718532_3524186330956247_4660041058053259264_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\84718532_3524186330956247_4660041058053259264_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -271,19 +289,16 @@
   <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="foodchain (8)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\foodchain (8)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1 (10)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1 (10).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="87025871_1477287375761653_299504257281818624_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\87025871_1477287375761653_299504257281818624_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\6.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rook_60px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rook_60px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logout_rounded_left_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logout_rounded_left_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="84437434_1634044810071790_1250668586532339712_o" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\84437434_1634044810071790_1250668586532339712_o.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1interface" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1interface.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

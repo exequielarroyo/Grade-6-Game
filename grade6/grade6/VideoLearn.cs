@@ -16,12 +16,52 @@ namespace grade6
         {
             InitializeComponent();
         }
-        
+
         private void VideoLearn_Load(object sender, EventArgs e)
         {
-            //question.Hide();
             
         }
+        public static bool foodChain = false;
+        public static bool foodweb = false;
+        public static bool herbivoreAnimals = false;
+        public static bool carnivoreAnimals = false;
+        public static bool omnivoreAnimals = false;
+        public static bool producer = false;
+        public static bool decomposer = false;
+
+        private void doneButton_Click(object sender, EventArgs e)
+        {
+            if (titleLabel.Text == "Food Chain")
+            {
+                if (foodChain == false)
+                    foodChain = true;
+                else
+                    foodChain = false;
+            }
+            else if (titleLabel.Text == "Food Web")
+            {
+                if (foodweb == false)
+                    foodweb = true;
+                else
+                    foodweb = false;
+            }
+            else if (titleLabel.Text == "Producer and Consumer")
+            {
+                if (producer == false)
+                    producer = true;
+                else
+                    producer = false;
+            }
+            else if (titleLabel.Text == "Decomposer")
+            {
+                if (decomposer == false)
+                    decomposer = true;
+                else
+                    decomposer = false;
+            }
+            
+        }
+
         public bool isPlay = false;
         private void gunaCircleButton1_Click(object sender, EventArgs e)
         {
@@ -81,7 +121,37 @@ namespace grade6
 
         private void titleLabel_TextChanged(object sender, EventArgs e)
         {
-            label.Text = titleLabel.Text;
+            //label.Text = titleLabel.Text;
+            Learn learn = new Learn();
+            if (titleLabel.Text == "Food Chain")
+            {
+                if (foodChain == false)
+                    doneButton.Checked = false;
+                else if (foodChain == true)
+                    doneButton.Checked = true;
+            }
+            else if (titleLabel.Text == "Food Web")
+            {
+                if (foodweb == false)
+                    doneButton.Checked = false;
+                else if (foodweb == true)
+                    doneButton.Checked = true;
+            }
+            else if (titleLabel.Text == "Producer and Consumer")
+            {
+                if (producer == false)
+                    doneButton.Checked = false;
+                else if (producer == true)
+                    doneButton.Checked = true;
+            }
+            else if (titleLabel.Text == "Decomposer")
+            {
+                if (decomposer == false)
+                    doneButton.Checked = false;
+                else if (decomposer == true)
+                    doneButton.Checked = true;
+            }
+            Refresh();
         }
 
         private void stopButton_Click(object sender, EventArgs e)
@@ -93,6 +163,11 @@ namespace grade6
                 isPlay = false;
                 label.Visible = true;
             }
+        }
+
+        private void doneButton_CheckedChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

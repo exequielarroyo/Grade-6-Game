@@ -138,6 +138,7 @@ namespace grade6
 
         private void homeButton_Click(object sender, EventArgs e)
         {
+            mainTableLayout.BackColor = Color.FromArgb(247, 247, 255);
             learn1.Hide();
             MainMenu.Show();
             Feedback.Show();
@@ -145,8 +146,11 @@ namespace grade6
             MainMenu.SetColumnSpan(MAINPANEL, 1);
             info.Hide();
         }
+        
         private void gamesButton_Click(object sender, EventArgs e)
         {
+
+            mainTableLayout.BackColor = Color.FromArgb(103, 83, 187);
             learn1.Hide();
             MainMenu.Hide();
             Feedback.Hide();
@@ -156,6 +160,7 @@ namespace grade6
         }
         private void learnButton_Click(object sender, EventArgs e)
         {
+            mainTableLayout.BackColor = Color.FromArgb(247, 247, 255);
             MainMenu.Hide();
             Feedback.Hide();
             games1.Hide();
@@ -166,6 +171,7 @@ namespace grade6
 
         private void infoButton_Click(object sender, EventArgs e)
         {
+            mainTableLayout.BackColor = Color.FromArgb(247, 247, 255);
             MainMenu.Hide();
             Feedback.Hide();
             games1.Hide();
@@ -270,7 +276,7 @@ namespace grade6
         {
             DialogResult YesOrNO = MessageBox.Show("Are You Sure To Quit ?", "Thesis GA[]\\/[]ER", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (sender as Guna.UI.WinForms.GunaShadowPanel != exit && YesOrNO == DialogResult.No) e.Cancel = true;
-            if (sender as Guna.UI.WinForms.GunaShadowPanel == exit && YesOrNO == DialogResult.Yes) Environment.Exit(0);
+            if (sender as Guna.UI.WinForms.GunaShadowPanel == exit && YesOrNO == DialogResult.Yes) Application.Exit();
         }
 
         private void btn1_Click(object sender, EventArgs e)
@@ -301,7 +307,7 @@ namespace grade6
         }
         private void animation_Tick(object sender, EventArgs e)
         {
-            for (int i = 0; i < 2; i++)
+            for (int i = 0; i < 3; i++)
             {
                 if (panels.Height <= 160)
                 {

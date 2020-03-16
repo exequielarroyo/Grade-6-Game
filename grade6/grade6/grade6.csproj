@@ -72,11 +72,18 @@
     <Compile Include="Games.Designer.cs">
       <DependentUpon>Games.cs</DependentUpon>
     </Compile>
+    <Compile Include="GamesClass.cs" />
     <Compile Include="GFoodChain.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="GFoodChain.Designer.cs">
       <DependentUpon>GFoodChain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GPlayer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GPlayer.Designer.cs">
+      <DependentUpon>GPlayer.cs</DependentUpon>
     </Compile>
     <Compile Include="GProducerConsumer.cs">
       <SubType>UserControl</SubType>
@@ -131,6 +138,9 @@
     <EmbeddedResource Include="GFoodChain.resx">
       <DependentUpon>GFoodChain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GPlayer.resx">
+      <DependentUpon>GPlayer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GProducerConsumer.resx">
       <DependentUpon>GProducerConsumer.cs</DependentUpon>
     </EmbeddedResource>
@@ -183,6 +193,14 @@
     <None Include="Resources\lion.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <COMReference Include="AxShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
     <COMReference Include="AxWMPLib">
       <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
       <VersionMajor>1</VersionMajor>
@@ -190,6 +208,15 @@
       <Lcid>0</Lcid>
       <WrapperTool>aximp</WrapperTool>
       <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
     <COMReference Include="WMPLib">
       <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
@@ -434,6 +461,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\84437434_1634044810071790_1250668586532339712_o.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkmark_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checked_checkbox_60px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2Asset 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_2048x.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1interface.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -164,7 +164,7 @@
             this.gunaLabel3.Name = "gunaLabel3";
             this.gunaLabel3.Size = new System.Drawing.Size(89, 20);
             this.gunaLabel3.TabIndex = 3;
-            this.gunaLabel3.Text = "Software Designer and\r\nGames Developer";
+            this.gunaLabel3.Text = "Software Designer and\r\nGame Developer";
             this.gunaLabel3.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
             this.gunaLabel3.MouseLeave += new System.EventHandler(this.exit_MouseLeave);
             this.gunaLabel3.MouseHover += new System.EventHandler(this.exit_MouseHover);

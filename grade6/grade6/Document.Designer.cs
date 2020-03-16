@@ -40,6 +40,7 @@
             this.gunaSeparator1 = new Guna.UI.WinForms.GunaSeparator();
             this.gunaVScrollBar1 = new Guna.UI.WinForms.GunaVScrollBar();
             this.elements = new System.Windows.Forms.FlowLayoutPanel();
+            this.doneButton = new Guna.UI.WinForms.GunaAdvenceButton();
             this.flowLayoutPanel1.SuspendLayout();
             this.aboutShadowPanel.SuspendLayout();
             this.elements.SuspendLayout();
@@ -116,6 +117,7 @@
             this.titleLabel.TabIndex = 12;
             this.titleLabel.Text = "Title";
             this.titleLabel.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
+            this.titleLabel.TextChanged += new System.EventHandler(this.titleLabel_TextChanged);
             // 
             // aboutShadowPanel
             // 
@@ -188,13 +190,53 @@
             this.elements.Controls.Add(this.aboutShadowPanel);
             this.elements.Location = new System.Drawing.Point(3, 59);
             this.elements.Name = "elements";
-            this.elements.Size = new System.Drawing.Size(582, 479);
+            this.elements.Size = new System.Drawing.Size(582, 474);
             this.elements.TabIndex = 16;
+            // 
+            // doneButton
+            // 
+            this.doneButton.Animated = true;
+            this.doneButton.AnimationHoverSpeed = 0.5F;
+            this.doneButton.AnimationSpeed = 0.2F;
+            this.doneButton.BackColor = System.Drawing.Color.Transparent;
+            this.doneButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
+            this.doneButton.BorderColor = System.Drawing.Color.Black;
+            this.doneButton.BorderSize = 1;
+            this.doneButton.ButtonType = Guna.UI.WinForms.AdvenceButtonType.ToogleButton;
+            this.doneButton.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
+            this.doneButton.CheckedBorderColor = System.Drawing.Color.Transparent;
+            this.doneButton.CheckedForeColor = System.Drawing.Color.Black;
+            this.doneButton.CheckedImage = global::grade6.Properties.Resources.checked_checkbox_60px;
+            this.doneButton.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.doneButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.doneButton.FocusedColor = System.Drawing.Color.Empty;
+            this.doneButton.Font = new System.Drawing.Font("Axiforma", 7F);
+            this.doneButton.ForeColor = System.Drawing.Color.Black;
+            this.doneButton.Image = global::grade6.Properties.Resources.checkmark_48px;
+            this.doneButton.ImageSize = new System.Drawing.Size(15, 15);
+            this.doneButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.doneButton.Location = new System.Drawing.Point(465, 483);
+            this.doneButton.Margin = new System.Windows.Forms.Padding(30, 5, 3, 3);
+            this.doneButton.Name = "doneButton";
+            this.doneButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
+            this.doneButton.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.doneButton.OnHoverForeColor = System.Drawing.Color.Black;
+            this.doneButton.OnHoverImage = null;
+            this.doneButton.OnHoverLineColor = System.Drawing.Color.Black;
+            this.doneButton.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(110)))), ((int)(((byte)(106)))));
+            this.doneButton.Radius = 10;
+            this.doneButton.Size = new System.Drawing.Size(96, 34);
+            this.doneButton.TabIndex = 17;
+            this.doneButton.Text = "DONE";
+            this.doneButton.TextOffsetX = 3;
+            this.doneButton.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.AntiAlias;
+            this.doneButton.Click += new System.EventHandler(this.doneButton_Click);
             // 
             // Document
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.doneButton);
             this.Controls.Add(this.gunaVScrollBar1);
             this.Controls.Add(this.elements);
             this.Controls.Add(this.titleLabel);
@@ -223,5 +265,6 @@
         public Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaVScrollBar gunaVScrollBar1;
         private System.Windows.Forms.FlowLayoutPanel elements;
+        private Guna.UI.WinForms.GunaAdvenceButton doneButton;
     }
 }

@@ -33,13 +33,13 @@
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaElipsePanel1 = new Guna.UI.WinForms.GunaElipsePanel();
             this.label = new Guna.UI.WinForms.GunaLabel();
+            this.player = new AxWMPLib.AxWindowsMediaPlayer();
             this.titleLabel = new Guna.UI.WinForms.GunaLabel();
+            this.doneButton = new Guna.UI.WinForms.GunaAdvenceButton();
             this.stopButton = new Guna.UI.WinForms.GunaCircleButton();
             this.fullButton = new Guna.UI.WinForms.GunaCircleButton();
             this.backButton = new Guna.UI.WinForms.GunaCircleButton();
             this.gunaCircleButton1 = new Guna.UI.WinForms.GunaCircleButton();
-            this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.player = new AxWMPLib.AxWindowsMediaPlayer();
             this.gunaElipsePanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             this.SuspendLayout();
@@ -76,6 +76,18 @@
             this.label.Text = "Video title";
             this.label.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
             // 
+            // player
+            // 
+            this.player.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.player.Enabled = true;
+            this.player.Location = new System.Drawing.Point(0, 0);
+            this.player.Margin = new System.Windows.Forms.Padding(0);
+            this.player.Name = "player";
+            this.player.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("player.OcxState")));
+            this.player.Size = new System.Drawing.Size(534, 300);
+            this.player.TabIndex = 0;
+            this.player.PlayStateChange += new AxWMPLib._WMPOCXEvents_PlayStateChangeEventHandler(this.player_PlayStateChange);
+            // 
             // titleLabel
             // 
             this.titleLabel.AutoSize = true;
@@ -90,6 +102,46 @@
             this.titleLabel.Text = "Title";
             this.titleLabel.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
             this.titleLabel.TextChanged += new System.EventHandler(this.titleLabel_TextChanged);
+            // 
+            // doneButton
+            // 
+            this.doneButton.Animated = true;
+            this.doneButton.AnimationHoverSpeed = 0.5F;
+            this.doneButton.AnimationSpeed = 0.2F;
+            this.doneButton.BackColor = System.Drawing.Color.Transparent;
+            this.doneButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
+            this.doneButton.BorderColor = System.Drawing.Color.Black;
+            this.doneButton.BorderSize = 1;
+            this.doneButton.ButtonType = Guna.UI.WinForms.AdvenceButtonType.ToogleButton;
+            this.doneButton.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
+            this.doneButton.CheckedBorderColor = System.Drawing.Color.Transparent;
+            this.doneButton.CheckedForeColor = System.Drawing.Color.Black;
+            this.doneButton.CheckedImage = global::grade6.Properties.Resources.checked_checkbox_60px;
+            this.doneButton.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.doneButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.doneButton.FocusedColor = System.Drawing.Color.Empty;
+            this.doneButton.Font = new System.Drawing.Font("Axiforma", 7F);
+            this.doneButton.ForeColor = System.Drawing.Color.Black;
+            this.doneButton.Image = global::grade6.Properties.Resources.checkmark_48px;
+            this.doneButton.ImageSize = new System.Drawing.Size(15, 15);
+            this.doneButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.doneButton.Location = new System.Drawing.Point(465, 483);
+            this.doneButton.Margin = new System.Windows.Forms.Padding(30, 5, 3, 3);
+            this.doneButton.Name = "doneButton";
+            this.doneButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
+            this.doneButton.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.doneButton.OnHoverForeColor = System.Drawing.Color.Black;
+            this.doneButton.OnHoverImage = null;
+            this.doneButton.OnHoverLineColor = System.Drawing.Color.Black;
+            this.doneButton.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(110)))), ((int)(((byte)(106)))));
+            this.doneButton.Radius = 10;
+            this.doneButton.Size = new System.Drawing.Size(96, 34);
+            this.doneButton.TabIndex = 13;
+            this.doneButton.Text = "DONE";
+            this.doneButton.TextOffsetX = 3;
+            this.doneButton.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.AntiAlias;
+            this.doneButton.CheckedChanged += new System.EventHandler(this.doneButton_CheckedChanged);
+            this.doneButton.Click += new System.EventHandler(this.doneButton_Click);
             // 
             // stopButton
             // 
@@ -186,62 +238,11 @@
             this.gunaCircleButton1.TabIndex = 1;
             this.gunaCircleButton1.Click += new System.EventHandler(this.gunaCircleButton1_Click);
             // 
-            // gunaAdvenceButton1
-            // 
-            this.gunaAdvenceButton1.Animated = true;
-            this.gunaAdvenceButton1.AnimationHoverSpeed = 0.5F;
-            this.gunaAdvenceButton1.AnimationSpeed = 0.2F;
-            this.gunaAdvenceButton1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaAdvenceButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
-            this.gunaAdvenceButton1.BorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.BorderSize = 1;
-            this.gunaAdvenceButton1.ButtonType = Guna.UI.WinForms.AdvenceButtonType.ToogleButton;
-            this.gunaAdvenceButton1.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
-            this.gunaAdvenceButton1.CheckedBorderColor = System.Drawing.Color.Transparent;
-            this.gunaAdvenceButton1.CheckedForeColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.CheckedImage = global::grade6.Properties.Resources.add_user_male_52px;
-            this.gunaAdvenceButton1.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.gunaAdvenceButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaAdvenceButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton1.Font = new System.Drawing.Font("Axiforma", 7F);
-            this.gunaAdvenceButton1.ForeColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.Image = global::grade6.Properties.Resources.add_user_male_52px;
-            this.gunaAdvenceButton1.ImageSize = new System.Drawing.Size(15, 15);
-            this.gunaAdvenceButton1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton1.Location = new System.Drawing.Point(475, 493);
-            this.gunaAdvenceButton1.Margin = new System.Windows.Forms.Padding(30, 5, 3, 3);
-            this.gunaAdvenceButton1.Name = "gunaAdvenceButton1";
-            this.gunaAdvenceButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
-            this.gunaAdvenceButton1.OnHoverBorderColor = System.Drawing.Color.Transparent;
-            this.gunaAdvenceButton1.OnHoverForeColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.OnHoverImage = null;
-            this.gunaAdvenceButton1.OnHoverLineColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(110)))), ((int)(((byte)(106)))));
-            this.gunaAdvenceButton1.Radius = 10;
-            this.gunaAdvenceButton1.Size = new System.Drawing.Size(96, 34);
-            this.gunaAdvenceButton1.TabIndex = 13;
-            this.gunaAdvenceButton1.Text = "ADD USER";
-            this.gunaAdvenceButton1.TextOffsetX = 3;
-            this.gunaAdvenceButton1.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.AntiAlias;
-            // 
-            // player
-            // 
-            this.player.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.player.Enabled = true;
-            this.player.Location = new System.Drawing.Point(0, 0);
-            this.player.Margin = new System.Windows.Forms.Padding(0);
-            this.player.Name = "player";
-            this.player.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("player.OcxState")));
-            this.player.Size = new System.Drawing.Size(534, 300);
-            this.player.TabIndex = 0;
-            this.player.PlayStateChange += new AxWMPLib._WMPOCXEvents_PlayStateChangeEventHandler(this.player_PlayStateChange);
-            
-            // 
             // VideoLearn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.gunaAdvenceButton1);
+            this.Controls.Add(this.doneButton);
             this.Controls.Add(this.stopButton);
             this.Controls.Add(this.titleLabel);
             this.Controls.Add(this.gunaElipsePanel1);
@@ -269,6 +270,6 @@
         public Guna.UI.WinForms.GunaCircleButton fullButton;
         public Guna.UI.WinForms.GunaLabel label;
         public Guna.UI.WinForms.GunaCircleButton stopButton;
-        private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton1;
+        public Guna.UI.WinForms.GunaAdvenceButton doneButton;
     }
 }
