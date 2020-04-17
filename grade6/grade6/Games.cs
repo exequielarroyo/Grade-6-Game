@@ -25,6 +25,7 @@ namespace grade6
             topTab.BringToFront();
             noGames.BringToFront();
             RefreshGamesForm();
+
         }
 
         private void producerConsumer_Click(object sender, EventArgs e)
@@ -56,6 +57,11 @@ namespace grade6
             gPlayer1.BringToFront();
         }
 
+        private void carnivorePanel_Click(object sender, EventArgs e)
+        {
+            gPlayer1.flashPlayer.Movie = Application.StartupPath + @"\\Zoo-Animals-Croc.swf";
+            gPlayer1.BringToFront();
+        }
         private void omnivorePanel_Click(object sender, EventArgs e)
         {
             gPlayer1.flashPlayer.Movie = Application.StartupPath + @"\\memoryOmnivores.swf";
@@ -66,23 +72,6 @@ namespace grade6
         {
             gPlayer1.flashPlayer.Movie = Application.StartupPath + @"\\producersconsumersgame.swf";
             gPlayer1.BringToFront();
-        }
-
-        private void start1_Click(object sender, EventArgs e)
-        {
-            foodChain_Click(sender, e);
-        }
-
-        private void start1_MouseDown(object sender, MouseEventArgs e)
-        {
-            start1.BaseColor = Color.FromArgb(72, 170, 123);
-            play.BaseColor = Color.FromArgb(85, 198, 144);
-        }
-
-        private void start1_MouseUp(object sender, MouseEventArgs e)
-        {
-            play.BaseColor = Color.FromArgb(72, 170, 123);
-            start1.BaseColor = Color.FromArgb(85, 198, 144);
         }
 
         private void Games_Scroll(object sender, ScrollEventArgs e)
@@ -115,30 +104,30 @@ namespace grade6
             {
                 foodwebPanel.Visible = true;
             }
-            if (Document.herbivoreAnimals == false)
+            if (VideoLearn.herbivoreAnimals == false)
             {
                 herbivorePanel.BaseColor = Color.FromArgb(148, 130, 219);
                 herbivorePanel.Visible = false;
             }
-            else if (Document.herbivoreAnimals == true)
+            else if (VideoLearn.herbivoreAnimals == true)
             {
                 herbivorePanel.Visible = true;
             }
-            if (Document.carnivoreAnimals == false)
+            if (VideoLearn.carnivoreAnimals == false)
             {
                 carnivorePanel.BaseColor = Color.FromArgb(148, 130, 219);
                 carnivorePanel.Visible = false;
             }
-            else if (Document.carnivoreAnimals == true)
+            else if (VideoLearn.carnivoreAnimals == true)
             {
                 carnivorePanel.Visible = true;
             }
-            if (Document.omnivoreAnimals == false)
+            if (VideoLearn.omnivoreAnimals == false)
             {
                 omnivorePanel.BaseColor = Color.FromArgb(148, 130, 219);
                 omnivorePanel.Visible = false;
             }
-            else if (Document.omnivoreAnimals == true)
+            else if (VideoLearn.omnivoreAnimals == true)
             {
                 omnivorePanel.Visible = true;
             }
@@ -184,5 +173,133 @@ namespace grade6
         {
             RefreshGamesForm();
         }
+
+        private void start1_Click(object sender, EventArgs e)
+        {
+            foodChain_Click(sender, e);
+        }
+
+        private void start1_MouseDown(object sender, MouseEventArgs e)
+        {
+            start1.BaseColor = Color.FromArgb(72, 170, 123);
+            play.BaseColor = Color.FromArgb(85, 198, 144);
+        }
+
+        private void start1_MouseUp(object sender, MouseEventArgs e)
+        {
+            play.BaseColor = Color.FromArgb(72, 170, 123);
+            start1.BaseColor = Color.FromArgb(85, 198, 144);
+        }
+
+        private void play2_Click(object sender, EventArgs e)
+        {
+            foodwebPanel_Click(sender, e);
+        }
+
+        private void play2_MouseDown(object sender, MouseEventArgs e)
+        {
+            play3.BaseColor = Color.FromArgb(72, 170, 123);
+            play2.BaseColor = Color.FromArgb(85, 198, 144);
+        }
+
+        private void play2_MouseUp(object sender, MouseEventArgs e)
+        {
+            play3.BaseColor = Color.FromArgb(85, 198, 144);
+            play2.BaseColor = Color.FromArgb(72, 170, 123);
+        }
+
+        private void panel4_Click(object sender, EventArgs e)
+        {
+            herbivorePanel_Click(sender, e);
+        }
+
+        private void panel4_MouseDown(object sender, MouseEventArgs e)
+        {
+            play4.BaseColor = Color.FromArgb(85, 198, 144);
+            play5.BaseColor = Color.FromArgb(72, 170, 123);
+        }
+
+        private void panel4_MouseUp(object sender, MouseEventArgs e)
+        {
+            play5.BaseColor = Color.FromArgb(85, 198, 144);
+            play4.BaseColor = Color.FromArgb(72, 170, 123);
+        }
+
+        private void play6_Click(object sender, EventArgs e)
+        {
+            carnivorePanel_Click(sender, e);
+        }
+
+        private void play6_MouseDown(object sender, MouseEventArgs e)
+        {
+            play6.BaseColor = Color.FromArgb(85, 198, 144);
+            play7.BaseColor = Color.FromArgb(72, 170, 123);
+        }
+
+        private void play6_MouseUp(object sender, MouseEventArgs e)
+        {
+            play7.BaseColor = Color.FromArgb(85, 198, 144);
+            play6.BaseColor = Color.FromArgb(72, 170, 123);
+        }
+
+        private void play8_Click(object sender, EventArgs e)
+        {
+            omnivorePanel_Click(sender, e);
+        }
+
+        private void play8_MouseDown(object sender, MouseEventArgs e)
+        {
+            play8.BaseColor = Color.FromArgb(85, 198, 144);
+            play9.BaseColor = Color.FromArgb(72, 170, 123);
+        }
+
+        private void play8_MouseUp(object sender, MouseEventArgs e)
+        {
+            play9.BaseColor = Color.FromArgb(85, 198, 144);
+            play8.BaseColor = Color.FromArgb(72, 170, 123);
+        }
+
+        private void play10_Click(object sender, EventArgs e)
+        {
+            producerConsumer_Click(sender,e);
+        }
+
+        private void play10_MouseDown(object sender, MouseEventArgs e)
+        {
+            play10.BaseColor = Color.FromArgb(85, 198, 144);
+            play11.BaseColor = Color.FromArgb(72, 170, 123);
+        }
+
+        private void play10_MouseUp(object sender, MouseEventArgs e)
+        {
+            play11.BaseColor = Color.FromArgb(85, 198, 144);
+            play10.BaseColor = Color.FromArgb(72, 170, 123);
+        }
+
+        private void play12_Click(object sender, EventArgs e)
+        {
+            producerPanel_Click(sender, e);
+        }
+
+        private void play12_MouseDown(object sender, MouseEventArgs e)
+        {
+            play12.BaseColor = Color.FromArgb(85, 198, 144);
+            play13.BaseColor = Color.FromArgb(72, 170, 123);
+        }
+
+        private void play12_MouseUp(object sender, MouseEventArgs e)
+        {
+            play13.BaseColor = Color.FromArgb(85, 198, 144);
+            play12.BaseColor = Color.FromArgb(72, 170, 123);
+        }
+
+        private void listGames_Scroll(object sender, ScrollEventArgs e)
+        {
+
+            topTab.Refresh();
+
+        }
+
+        
     }
 }

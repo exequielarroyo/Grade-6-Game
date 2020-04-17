@@ -131,7 +131,34 @@
         2BMAAAs=
 </value>
   </data>
+  <data name="subtitle2.Text" xml:space="preserve">
+    <value>Animals get energy from the food they eat, and all living things get energy from food. Plants use sunlight, water and nutrients to get energy (in a process called photosynthesis). Energy is necessary for living beings to grow.</value>
+  </data>
+  <data name="subtitle3.Text" xml:space="preserve">
+    <value>A food chain shows how each living thing gets food, and how nutrients and energy are passed from creature to creature. Food chains begin with plant-life, and end with animal-life. Some animals eat plants, some animals eat other animals.</value>
+  </data>
+  <data name="subtitle5.Text" xml:space="preserve">
+    <value>Bigger Food Chains
+
+Here's another food chain, with a few more animals. It starts with acorns, which are eaten by mice. The mice are eaten by snakes, and then finally the snakes are eaten by hawks. At each link in the chain, energy is being transferred from one animal to another.</value>
+  </data>
+  <data name="subtitle7.Text" xml:space="preserve">
+    <value>There is actually even more to this chain. After a hawk dies, fungi (like mushrooms) and other decomposers break down the dead hawk, and turn the remains of the hawk into nutrients, which are released into the soil. The nutrients (plus sun and water) then cause the grass to grow.
+It's a full circle of life and energy!!</value>
+  </data>
+  <data name="subtitle8.Text" xml:space="preserve">
+    <value>So food chains make a full circle, and energy is passed from plant to animal to animal to decomposer and back to plant! There can be many links in food chains but not TOO many. If there are too many links, then the animal at the end would not get enough energy.</value>
+  </data>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>134, 17</value>
+  </metadata>
+  <metadata name="start1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="gunaLabel1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>27</value>
+    <value>28</value>
   </metadata>
 </root>

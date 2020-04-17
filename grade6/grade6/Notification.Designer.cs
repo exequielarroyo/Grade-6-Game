@@ -34,6 +34,8 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.gunaImageButton2 = new Guna.UI.WinForms.GunaImageButton();
             this.Xbtn = new Guna.UI.WinForms.GunaImageButton();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // gunaElipse1
@@ -45,11 +47,11 @@
             // 
             this.lblMsg.AutoSize = true;
             this.lblMsg.Font = new System.Drawing.Font("Axiforma", 8F);
-            this.lblMsg.Location = new System.Drawing.Point(54, 26);
+            this.lblMsg.Location = new System.Drawing.Point(3, 0);
             this.lblMsg.Name = "lblMsg";
-            this.lblMsg.Size = new System.Drawing.Size(152, 17);
+            this.lblMsg.Size = new System.Drawing.Size(102, 34);
             this.lblMsg.TabIndex = 0;
-            this.lblMsg.Text = "you unlock a hidden video";
+            this.lblMsg.Text = "sample text here\r\nto display";
             // 
             // timer1
             // 
@@ -80,23 +82,32 @@
             this.Xbtn.TabIndex = 1;
             this.Xbtn.Click += new System.EventHandler(this.Xbtn_Click);
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.lblMsg);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(54, 16);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(155, 48);
+            this.flowLayoutPanel1.TabIndex = 3;
+            // 
             // Notification
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
             this.ClientSize = new System.Drawing.Size(256, 72);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.gunaImageButton2);
             this.Controls.Add(this.Xbtn);
-            this.Controls.Add(this.lblMsg);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Notification";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.Text = "Notification";
             this.Load += new System.EventHandler(this.Notification_Load);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -107,5 +118,6 @@
         private Guna.UI.WinForms.GunaImageButton Xbtn;
         private Guna.UI.WinForms.GunaLabel lblMsg;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

@@ -55,6 +55,7 @@
             this.learnButton = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gamesButton = new Guna.UI.WinForms.GunaAdvenceButton();
             this.infoButton = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.Music = new AxWMPLib.AxWindowsMediaPlayer();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.btn2 = new Guna.UI.WinForms.GunaAdvenceTileButton();
             this.btn1 = new Guna.UI.WinForms.GunaAdvenceTileButton();
@@ -66,9 +67,9 @@
             this.gunaPictureBox7 = new Guna.UI.WinForms.GunaPictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.exit = new Guna.UI.WinForms.GunaShadowPanel();
-            this.gunaImageButton2 = new Guna.UI.WinForms.GunaImageButton();
+            this.muteButton = new Guna.UI.WinForms.GunaImageButton();
             this.exitLabel = new Guna.UI.WinForms.GunaLabel();
-            this.gunaImageButton1 = new Guna.UI.WinForms.GunaImageButton();
+            this.settingButton = new Guna.UI.WinForms.GunaImageButton();
             this.Feedback = new Guna.UI.WinForms.GunaElipsePanel();
             this.gunaLabel15 = new Guna.UI.WinForms.GunaLabel();
             this.gunaShadowPanel8 = new Guna.UI.WinForms.GunaShadowPanel();
@@ -159,6 +160,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             this.gunaElipsePanel1.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Music)).BeginInit();
             this.flowLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox11)).BeginInit();
             this.panel5.SuspendLayout();
@@ -509,6 +511,7 @@
             this.flowLayoutPanel3.Controls.Add(this.learnButton);
             this.flowLayoutPanel3.Controls.Add(this.gamesButton);
             this.flowLayoutPanel3.Controls.Add(this.infoButton);
+            this.flowLayoutPanel3.Controls.Add(this.Music);
             this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel3.Location = new System.Drawing.Point(51, 100);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
@@ -672,6 +675,17 @@
             this.infoButton.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.AntiAlias;
             this.infoButton.Click += new System.EventHandler(this.infoButton_Click);
             // 
+            // Music
+            // 
+            this.Music.Enabled = true;
+            this.Music.Location = new System.Drawing.Point(3, 226);
+            this.Music.Name = "Music";
+            this.Music.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("Music.OcxState")));
+            this.Music.Size = new System.Drawing.Size(75, 23);
+            this.Music.TabIndex = 10;
+            this.Music.Visible = false;
+            this.Music.PlayStateChange += new AxWMPLib._WMPOCXEvents_PlayStateChangeEventHandler(this.Music_PlayStateChange);
+            // 
             // flowLayoutPanel4
             // 
             this.flowLayoutPanel4.Controls.Add(this.btn2);
@@ -718,6 +732,7 @@
             this.btn2.Size = new System.Drawing.Size(20, 20);
             this.btn2.TabIndex = 14;
             this.btn2.Text = "A";
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // btn1
             // 
@@ -785,6 +800,7 @@
             this.btn3.Size = new System.Drawing.Size(20, 20);
             this.btn3.TabIndex = 16;
             this.btn3.Text = "C";
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
             // gunaPictureBox11
             // 
@@ -898,9 +914,9 @@
             // 
             this.exit.BackColor = System.Drawing.Color.Transparent;
             this.exit.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(92)))), ((int)(((byte)(98)))));
-            this.exit.Controls.Add(this.gunaImageButton2);
+            this.exit.Controls.Add(this.muteButton);
             this.exit.Controls.Add(this.exitLabel);
-            this.exit.Controls.Add(this.gunaImageButton1);
+            this.exit.Controls.Add(this.settingButton);
             this.exit.Location = new System.Drawing.Point(15, 26);
             this.exit.Margin = new System.Windows.Forms.Padding(10, 5, 3, 3);
             this.exit.Name = "exit";
@@ -914,17 +930,18 @@
             this.exit.MouseLeave += new System.EventHandler(this.exit_MouseLeave);
             this.exit.MouseHover += new System.EventHandler(this.exit_MouseHover);
             // 
-            // gunaImageButton2
+            // muteButton
             // 
-            this.gunaImageButton2.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaImageButton2.Image = global::grade6.Properties.Resources.sound_100px;
-            this.gunaImageButton2.ImageSize = new System.Drawing.Size(14, 14);
-            this.gunaImageButton2.Location = new System.Drawing.Point(88, 16);
-            this.gunaImageButton2.Name = "gunaImageButton2";
-            this.gunaImageButton2.OnHoverImage = null;
-            this.gunaImageButton2.OnHoverImageOffset = new System.Drawing.Point(0, 1);
-            this.gunaImageButton2.Size = new System.Drawing.Size(18, 18);
-            this.gunaImageButton2.TabIndex = 11;
+            this.muteButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.muteButton.Image = global::grade6.Properties.Resources.sound_100px;
+            this.muteButton.ImageSize = new System.Drawing.Size(14, 14);
+            this.muteButton.Location = new System.Drawing.Point(88, 16);
+            this.muteButton.Name = "muteButton";
+            this.muteButton.OnHoverImage = null;
+            this.muteButton.OnHoverImageOffset = new System.Drawing.Point(0, 1);
+            this.muteButton.Size = new System.Drawing.Size(18, 18);
+            this.muteButton.TabIndex = 11;
+            this.muteButton.Click += new System.EventHandler(this.muteButton_Click);
             // 
             // exitLabel
             // 
@@ -945,17 +962,17 @@
             this.exitLabel.MouseLeave += new System.EventHandler(this.exit_MouseLeave);
             this.exitLabel.MouseHover += new System.EventHandler(this.exit_MouseHover);
             // 
-            // gunaImageButton1
+            // settingButton
             // 
-            this.gunaImageButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaImageButton1.Image = global::grade6.Properties.Resources.settings_64px;
-            this.gunaImageButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaImageButton1.Location = new System.Drawing.Point(109, 16);
-            this.gunaImageButton1.Name = "gunaImageButton1";
-            this.gunaImageButton1.OnHoverImage = null;
-            this.gunaImageButton1.OnHoverImageOffset = new System.Drawing.Point(0, 1);
-            this.gunaImageButton1.Size = new System.Drawing.Size(18, 18);
-            this.gunaImageButton1.TabIndex = 10;
+            this.settingButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.settingButton.Image = global::grade6.Properties.Resources.settings_64px;
+            this.settingButton.ImageSize = new System.Drawing.Size(20, 20);
+            this.settingButton.Location = new System.Drawing.Point(109, 16);
+            this.settingButton.Name = "settingButton";
+            this.settingButton.OnHoverImage = null;
+            this.settingButton.OnHoverImageOffset = new System.Drawing.Point(0, 1);
+            this.settingButton.Size = new System.Drawing.Size(18, 18);
+            this.settingButton.TabIndex = 10;
             // 
             // Feedback
             // 
@@ -1492,6 +1509,7 @@
             this.gunaAdvenceButton1.Text = "ADD USER";
             this.gunaAdvenceButton1.TextOffsetX = 3;
             this.gunaAdvenceButton1.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.AntiAlias;
+            this.gunaAdvenceButton1.Visible = false;
             // 
             // gunaLabel13
             // 
@@ -1927,6 +1945,7 @@
             this.mainTableLayout.Controls.Add(this.Feedback, 2, 0);
             this.mainTableLayout.Controls.Add(this.gunaElipsePanel1, 0, 0);
             this.mainTableLayout.Controls.Add(this.MAINPANEL, 1, 0);
+            this.mainTableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainTableLayout.Location = new System.Drawing.Point(0, 0);
             this.mainTableLayout.Name = "mainTableLayout";
             this.mainTableLayout.RowCount = 1;
@@ -2005,7 +2024,7 @@
             // 
             this.loadingScreen1.Location = new System.Drawing.Point(0, 0);
             this.loadingScreen1.Name = "loadingScreen1";
-            this.loadingScreen1.Size = new System.Drawing.Size(791, 541);
+            this.loadingScreen1.Size = new System.Drawing.Size(789, 549);
             this.loadingScreen1.TabIndex = 7;
             // 
             // Form1
@@ -2028,6 +2047,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
             this.gunaElipsePanel1.ResumeLayout(false);
             this.flowLayoutPanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Music)).EndInit();
             this.flowLayoutPanel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox11)).EndInit();
             this.panel5.ResumeLayout(false);
@@ -2179,9 +2199,10 @@
         private System.Windows.Forms.Timer animation;
         private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton1;
         private System.Windows.Forms.Timer animation2;
-        private Guna.UI.WinForms.GunaImageButton gunaImageButton1;
-        private Guna.UI.WinForms.GunaImageButton gunaImageButton2;
+        private Guna.UI.WinForms.GunaImageButton settingButton;
+        private Guna.UI.WinForms.GunaImageButton muteButton;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox11;
+        internal AxWMPLib.AxWindowsMediaPlayer Music;
     }
 }
 

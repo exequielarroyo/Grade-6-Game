@@ -33,22 +33,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bunifu_UI_v1.52">
-      <HintPath>D:\UI framework\Bunifu_UI_v1.52.dll</HintPath>
-    </Reference>
     <Reference Include="Control.Draggable, Version=1.0.5049.269, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Control.Draggable.1.0.5049.269\lib\net35-Client\Control.Draggable.dll</HintPath>
     </Reference>
-    <Reference Include="Guna.UI">
+    <Reference Include="Guna.UI, Version=1.8.0.0, Culture=neutral, PublicKeyToken=ad275b4be6718d4b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>D:\UI framework\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib\.net 4.0\Guna.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroFramework">
-      <HintPath>D:\UI framework\MetroFramework\MetroFramework.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Speech" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -123,6 +119,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="VideoLearn.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -161,14 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="VideoLearn.resx">
       <DependentUpon>VideoLearn.cs</DependentUpon>
     </EmbeddedResource>
@@ -476,6 +472,228 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\1interface.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiply_60px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag_2_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag_2_48pxGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cateat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\simplechain.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_bigchain2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\simplechain2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\simplechain3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\producer.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\producer1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\producer2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decomposer2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decomposer3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decomposer0.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fullchain.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foodweb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foodweb2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foodweb3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foodweb4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foodweb5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foodweb8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\herbivore1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\herbivore3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\herbivore4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\herbivore5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\herbivore6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\herbivore7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\herbivore66.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\herbivore2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carnivore1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carnivore2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carnivore4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carnivore5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carnivore8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carnivore6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carnivore7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carnivore3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ominvore1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\omnivore2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\omnivore3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\omnivore4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\omnivore5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\omnivore6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\omnivore7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\omnivore8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\producer1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\producer2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\producer3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\producer4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\producer6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\producer7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decomposer1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decomposer2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decomposer3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decomposer4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decomposer5.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decomposer7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decomposer6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\com.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\com.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\complete.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\click.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\click2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\home.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carnivore8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decomposer5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foodweb1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\producer_consumer.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rook_60px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no_audio_100px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

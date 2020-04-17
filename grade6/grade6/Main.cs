@@ -9,16 +9,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace grade6
 {
     public partial class Form1 : Form
     {
         public SoundPlayer unlock = new SoundPlayer(Properties.Resources.unlock);
+        public SoundPlayer click = new SoundPlayer(Properties.Resources.click2);
+        public SoundPlayer bgMusic = new SoundPlayer(Properties.Resources.home);
 
+        private bool resizing = false;
+        private Point last = new Point(0, 0);
         public Form1()
         {
             InitializeComponent();
-            //unlock = new SoundPlayer(Properties.Resources.unlock);
+            this.FormBorderStyle = FormBorderStyle.None;
         }
 
         public void Alert(string msg, Notification.enmType type)
@@ -126,6 +131,8 @@ namespace grade6
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.SizeGripStyle = SizeGripStyle.Show;
+            this.MinimumSize = new Size(791, 541);
             //loadingScreen1.BringToFront();
             //loadingScreen1.timer1.Start();
             learn1.Hide();
@@ -134,8 +141,16 @@ namespace grade6
             games1.Hide();
             info.Hide();
             MainMenu.Dock = DockStyle.Fill;
+            Music.URL = Application.StartupPath + "\\home.wav";
+            Music.settings.volume = 30;
+            Music.Ctlcontrols.play();
         }
 
+        
+        private void Music_PlayStateChange(object sender, AxWMPLib._WMPOCXEvents_PlayStateChangeEvent e)
+        {
+            Music.Ctlcontrols.play();
+        }
         private void homeButton_Click(object sender, EventArgs e)
         {
             mainTableLayout.BackColor = Color.FromArgb(247, 247, 255);
@@ -145,8 +160,9 @@ namespace grade6
             games1.Hide();
             MainMenu.SetColumnSpan(MAINPANEL, 1);
             info.Hide();
+            click.Play();
         }
-        
+
         private void gamesButton_Click(object sender, EventArgs e)
         {
 
@@ -157,6 +173,7 @@ namespace grade6
             games1.Show();
             MainMenu.SetColumnSpan(MAINPANEL, 2);
             info.Hide();
+            click.Play();
         }
         private void learnButton_Click(object sender, EventArgs e)
         {
@@ -167,6 +184,7 @@ namespace grade6
             MainMenu.SetColumnSpan(MAINPANEL, 2);
             learn1.Show();
             info.Hide();
+            click.Play();
         }
 
         private void infoButton_Click(object sender, EventArgs e)
@@ -178,6 +196,7 @@ namespace grade6
             MainMenu.SetColumnSpan(MAINPANEL, 2);
             learn1.Show();
             info.Show();
+            click.Play();
         }
 
         private void playVideoButton_MouseHover(object sender, EventArgs e)
@@ -196,6 +215,7 @@ namespace grade6
 
         private void playVideoButton_Click(object sender, EventArgs e)
         {
+            click.Play();
             learnButton_Click(sender, e);
             learn1.gunaShadowPanel2_Click(sender, e);
             learnButton.Checked = true;
@@ -203,12 +223,14 @@ namespace grade6
 
         private void readLabel_Click(object sender, EventArgs e)
         {
+            click.Play();
             learnButton_Click(sender, e);
             learn1.gunaShadowPanel4_Click(sender, e);
             learnButton.Checked = true;
         }
         private void gunaShadowPanel1_Click(object sender, EventArgs e)
         {
+            click.Play();
             learnButton_Click(sender, e);
             learn1.gunaShadowPanel1_Click(sender, e);
             learnButton.Checked = true;
@@ -216,6 +238,7 @@ namespace grade6
 
         private void gunaShadowPanel2_Click(object sender, EventArgs e)
         {
+            click.Play();
             learnButton_Click(sender, e);
             learn1.gunaShadowPanel2_Click(sender, e);
             learnButton.Checked = true;
@@ -223,6 +246,7 @@ namespace grade6
 
         private void gunaShadowPanel3_Click(object sender, EventArgs e)
         {
+            click.Play();
             learnButton_Click(sender, e);
             learn1.gunaShadowPanel3_Click(sender, e);
             learnButton.Checked = true;
@@ -230,6 +254,7 @@ namespace grade6
 
         private void gunaShadowPanel4_Click(object sender, EventArgs e)
         {
+            click.Play();
             learnButton_Click(sender, e);
             learn1.gunaShadowPanel4_Click(sender, e);
             learnButton.Checked = true;
@@ -237,6 +262,7 @@ namespace grade6
 
         private void gunaShadowPanel12_Click(object sender, EventArgs e)
         {
+            click.Play();
             learnButton_Click(sender, e);
             learn1.gunaShadowPanel12_Click(sender, e);
             learnButton.Checked = true;
@@ -244,6 +270,7 @@ namespace grade6
 
         private void gunaShadowPanel11_Click(object sender, EventArgs e)
         {
+            click.Play();
             learnButton_Click(sender, e);
             learn1.gunaShadowPanel11_Click(sender, e);
             learnButton.Checked = true;
@@ -251,6 +278,7 @@ namespace grade6
 
         private void gunaShadowPanel10_Click(object sender, EventArgs e)
         {
+            click.Play();
             learnButton_Click(sender, e);
             learn1.gunaShadowPanel10_Click(sender, e);
             learnButton.Checked = true;
@@ -270,7 +298,7 @@ namespace grade6
         private void exit_Click(object sender, EventArgs e)
         {
             AskPermissionBeforeQuite(sender, e as FormClosingEventArgs);
-
+            click.Play();
         }
         private void AskPermissionBeforeQuite(object sender, FormClosingEventArgs e)
         {
@@ -287,12 +315,11 @@ namespace grade6
             gamesButton.Checked = false;
             infoButton.Checked = false;
             learn1.videoLearn1.player.URL = Application.StartupPath + "\\Why Meat is the Best Worst Thing in the World 🍔.mp4";
-            learn1.videoLearn1.titleLabel.Text = "Why Meat is the Best Worst Thing in the World 🍔";
+            learn1.videoLearn1.label.Text = "Why Meat is the Best Worst Thing in the World 🍔";
+            learn1.videoLearn1.videoPlayer.BringToFront();
             learn1.videoLearn1.BringToFront();
             learn1.videoLearn1.player.Ctlcontrols.play();
-
             this.Alert("you unlock a hidden video", Notification.enmType.Success);
-
         }
 
         Guna.UI.WinForms.GunaShadowPanel panels;
@@ -341,6 +368,7 @@ namespace grade6
         }
         void Back2(Guna.UI.WinForms.GunaShadowPanel panelss)
         {
+
             panelss.Height = 77;
             panelss.Width = 146;
         }
@@ -366,5 +394,52 @@ namespace grade6
             Back2(chat1);
         }
 
+        bool isMute = false;
+        private void muteButton_Click(object sender, EventArgs e)
+        {
+            if (isMute == false)
+            {
+                muteButton.Image = Properties.Resources.no_audio_100px;
+                Music.settings.mute = true;
+                isMute = true;
+            }
+            else if (isMute)
+            {
+                muteButton.Image = Properties.Resources.sound_100px;
+                Music.settings.mute = false;
+                isMute = false;
+            }
+            
+        }
+
+        private void btn2_Click(object sender, EventArgs e)
+        {
+            learnButton_Click(sender, e);
+            homeButton.Checked = false;
+            learnButton.Checked = false;
+            gamesButton.Checked = false;
+            infoButton.Checked = false;
+            learn1.videoLearn1.player.URL = Application.StartupPath + "\\Is Organic Really Better Healthy Food or Trendy Scam.mp4";
+            learn1.videoLearn1.label.Text = "Is Organic Really Better Healthy Food or Trendy Scam";
+            learn1.videoLearn1.videoPlayer.BringToFront();
+            learn1.videoLearn1.BringToFront();
+            learn1.videoLearn1.player.Ctlcontrols.play();
+            this.Alert("you unlock a hidden video", Notification.enmType.Success);
+        }
+
+        private void btn3_Click(object sender, EventArgs e)
+        {
+            learnButton_Click(sender, e);
+            homeButton.Checked = false;
+            learnButton.Checked = false;
+            gamesButton.Checked = false;
+            infoButton.Checked = false;
+            learn1.videoLearn1.player.URL = Application.StartupPath + "\\Is Meat Bad for You Is Meat Unhealthy.mp4";
+            learn1.videoLearn1.label.Text = "Is Meat Bad for You Is Meat Unhealthy";
+            learn1.videoLearn1.videoPlayer.BringToFront();
+            learn1.videoLearn1.BringToFront();
+            learn1.videoLearn1.player.Ctlcontrols.play();
+            this.Alert("you unlock a hidden video", Notification.enmType.Success);
+        }
     }
 }
